@@ -1,0 +1,16 @@
+# 60-Second Pitch Video Script: Journey Into the Soil
+
+**Title:** Journey Into the Soil  
+**Target Duration:** Exactly 60 Seconds  
+**Format:** Screen recording + Arabic/English voiceover + ambient soundscape  
+
+---
+
+| Time | Visual on Screen | Voiceover / Narration (English) | Arabic Voiceover Draft |
+| :--- | :--- | :--- | :--- |
+| **0:00 - 0:08** | **The Farmer's Dilemma**: Aerial view of Egyptian fields. Quick cut to a farmer in the Delta looking at parched, saline soil and unpredictable weather. | *"Egypt's farmers are fighting a silent crisis: intensifying heat, water scarcity, and salinizing soils. But the most critical decisions lie where no one can see: beneath the surface."* | *"مزارعو مصر يواجهون تحديات متزايدة: موجات حرارة شديدة، شح المياه، وملوحة التربة. لكن القرارات الأهم تكمن تحت سطح الأرض."* |
+| **0:08 - 0:17** | **Interactive Egypt Map**: User clicks on Kafr El-Sheikh on the interactive Egypt Relief Map. 4-Stage Simulation Wizard quickly confirms soil texture and irrigation history. | *"Meet Journey Into the Soil. Select any field across Egypt—or 27 pre-calibrated demo sites. In seconds, 25 years of NASA Earth observations meet local soil physics."* | *"منصة 'رحلة إلى باطن التربة'. اختر أي حقل في مصر أو من 27 موقعاً مبرمجاً مسبقاً، لتربط 25 عاماً من بيانات ناسا مع فيزياء التربة المحلية."* |
+| **0:17 - 0:28** | **The 3-Act Cinematic Dive**: Camera dives from lush date palms and cattle down into the excavation trench, revealing the 4-layer stratified soil profile with living multi-plant root networks. | *"Dive into the rhizosphere. Our 3D simulation reveals root elongation, moisture depletion, and real-time atmospheric weather conditions right across the root zone."* | *"اغمر نفسك في أعماق التربة. محاكاتنا ثلاثية الأبعاد تكشف نمو الجذور، استهلاك المياه، والأرصاد الجوية الحية مباشرة في منطقة الجذور."* |
+| **0:28 - 0:42** | **3 Rotation Strategies**: Screen shows the comparative triad: Existing baseline vs Recommended Primary vs Contrast strategy. Camera zooms into Why/Evidence/Risks cards. | *"We don't replace farmers; we support them. The engine compares 3 distinct crop rotations, detailing exact water savings, soil carbon gains, and clear extension risks."* | *"نحن لا نستبدل المزارع، بل ندعمه. يقارن المحرك 3 دورات زراعية مع توضيح توفير المياه، صحة التربة، والمخاطر الواجب مراجعتها محلياً."* |
+| **0:42 - 0:52** | **15-Year Historical Uncertainty**: User drags the climate scenario slider (+2°C, -10% rain). Timeline scrubs smoothly, showing p10/p50/p90 risk distribution bands. | *"Tested across 15 historical climate analog years, our engine reveals true resilience—not guesswork. Plus, an Arabic-speaking AI agronomist cites verified literature on demand."* | *"باختبارها عبر 15 عاماً مناخياً، نكشف درجات الأمان الحقيقية. بالإضافة إلى مساعد ذكي يجيبك بالعربية مستنداً لأبحاث موثقة."* |
+| **0:52 - 1:00** | **Call to Action & Outro**: Hero dashboard with NASA data badges (POWER, SMAP, VIIRS). The Shifters logo and NASA Space Apps 2026 title card. | *"Journey Into the Soil: Where space data meets the root zone. Built by The Shifters for NASA Space Apps 2026."* | *"رحلة إلى باطن التربة: حيث تلتقي بيانات الفضاء بجذور الأرض. من فريق The Shifters لتحدي ناسا 2026."* |

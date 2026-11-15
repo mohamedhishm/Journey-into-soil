@@ -1,0 +1,171 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "journey-into-the-soil/result/1.1.0",
+  "title": "Analysis result (schema_version 1.1.0)",
+  "description": "Single source of truth shared by api/, web/src/scene and web/src/features. Changing this file is a contract change: bump schema_version, update the mock, tell every agent.",
+  "type": "object",
+  "required": ["schema_version", "request_id", "input", "field", "flags", "input_status", "nasa_data", "layers", "climate", "timeline", "strategies", "needs_local_review", "disclaimers"],
+  "properties": {
+    "schema_version": { "const": "1.1.0" },
+    "generated_at": { "type": "string" },
+    "request_id": { "type": "string", "minLength": 4 },
+    "knowledge_version": { "type": "string" },
+    "candidates_evaluated": { "type": "integer" },
+    "existing_rank": { "type": "integer" },
+    "input": { "type": "object" },
+    "field": {
+      "type": "object",
+      "required": ["lat", "lon", "region"],
+      "properties": { "lat": { "type": "number" }, "lon": { "type": "number" }, "area_feddan": { "type": ["number", "null"] }, "region": { "enum": ["delta", "upper_egypt", "new_lands"] } }
+    },
+    "flags": { "type": "array", "items": { "$ref": "#/$defs/flag" } },
+    "input_status": { "type": "object", "additionalProperties": { "enum": ["measured", "estimated"] } },
+    "nasa_data": {
+      "type": "array",
+      "items": { "type": "object", "required": ["id", "name_key", "role_key", "status", "resolution_km"], "properties": { "status": { "enum": ["pack", "live", "planned", "placeholder"] } } }
+    },
+    "nasa_evidence": {
+      "type": "object",
+      "description": "Site-specific NASA observations (demo pack). SMAP comparisons are always labelled indicative; missing products carry status 'planned' with a reason and never break the result.",
+      "properties": {
+        "smap": { "$ref": "#/$defs/smapEvidence" },
+        "ndvi": { "$ref": "#/$defs/ndviEvidence" }
+      },
+      "additionalProperties": true
+    },
+    "layers": {
+      "type": "array", "minItems": 4, "maxItems": 4,
+      "items": {
+        "type": "object",
+        "required": ["name_key", "top_cm", "bottom_cm", "sand", "silt", "clay", "om", "ph", "ec", "wp", "fc", "sat", "source", "confidence"],
+        "properties": { "confidence": { "enum": ["low", "medium", "high"] } }
+      }
+    },
+    "climate": {
+      "type": "object",
+      "required": ["dates", "tmax", "tmin", "rain", "et0", "source", "scenario"],
+      "properties": {
+        "dates": { "type": "array", "items": { "type": "string" } },
+        "tmax": { "type": "array", "items": { "type": "number" } },
+        "tmin": { "type": "array", "items": { "type": "number" } },
+        "rain": { "type": "array", "items": { "type": "number" } },
+        "et0": { "type": "array", "items": { "type": "number" } },
+        "source": { "enum": ["synthetic", "pack"] },
+        "scenario": { "type": "object", "required": ["dT", "dP"] }
+      }
+    },
+    "timeline": { "type": "object", "required": ["start", "end", "days"], "properties": { "days": { "type": "integer", "minimum": 1 } } },
+    "strategies": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/strategy" } },
+    "needs_local_review": { "type": "array", "items": { "type": "string" } },
+    "disclaimers": { "type": "array", "minItems": 1, "items": { "type": "string" } }
+  },
+  "$defs": {
+    "smapEvidence": {
+      "type": "object",
+      "required": ["status", "product", "version", "indicative"],
+      "properties": {
+        "status": { "enum": ["pack", "planned"] },
+        "product": { "type": "string" },
+        "version": { "type": "string" },
+        "depth": { "type": ["string", "null"] },
+        "depth_cm": { "type": ["array", "null"] },
+        "root_zone_available": { "type": "boolean" },
+        "units": { "type": "string" },
+        "indicative": { "type": "boolean" },
+        "n_accepted": { "type": "integer" },
+        "observations": { "type": "array", "items": { "type": "object" } },
+        "comparison": { "type": "object" },
+        "limitations": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    },
+    "ndviEvidence": {
+      "type": "object",
+      "required": ["status", "product", "version"],
+      "properties": {
+        "status": { "enum": ["pack", "planned"] },
+        "product": { "type": "string" },
+        "version": { "type": "string" },
+        "units": { "type": "string" },
+        "observations": { "type": "array", "items": { "type": "object" } },
+        "timeline_check": { "type": "object" },
+        "limitations": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    },
+    "msg": { "type": "object", "required": ["key", "params"], "properties": { "key": { "type": "string" }, "params": { "type": "object" } } },
+    "flag": { "type": "object", "required": ["field", "key", "severity", "params"], "properties": { "severity": { "enum": ["info", "warn", "error"] } } },
+    "evidence": { "type": "object", "required": ["source", "key", "params"], "properties": { "source": { "type": "string" }, "key": { "type": "string" }, "params": { "type": "object" } } },
+    "uncertainty_metrics": {
+      "type": "object",
+      "required": ["irrigation_mm", "water_stress", "salinity_stress", "heat_days", "total_score"],
+      "properties": {
+        "irrigation_mm": { "type": "number" },
+        "water_stress": { "type": "number" },
+        "salinity_stress": { "type": "number" },
+        "heat_days": { "type": "number" },
+        "total_score": { "type": "number" }
+      }
+    },
+    "strategy": {
+      "type": "object",
+      "required": ["id", "label_key", "archetype", "seasons", "bare_periods", "scores", "indicators", "why", "evidence", "benefits", "gaps", "risks", "confidence", "sim", "uncertainty"],
+      "properties": {
+        "id": { "enum": ["existing", "primary", "contrast"] },
+        "archetype": { "enum": ["existing", "water", "soil_health", "income", "risk"] },
+        "seasons": {
+          "type": "array", "minItems": 3, "maxItems": 3,
+          "items": {
+            "type": "object",
+            "required": ["season", "crop", "sow_date", "harvest_date", "indicators"],
+            "properties": {
+              "season": { "enum": ["winter", "summer", "nili"] },
+              "crop": { "type": ["string", "null"] },
+              "indicators": {
+                "type": ["object", "null"],
+                "required": ["et_mm", "rain_mm", "irrigation_mm", "drainage_mm", "water_stress", "salinity_stress", "heat_days"]
+              }
+            }
+          }
+        },
+        "bare_periods": { "type": "array", "items": { "type": "object", "required": ["start", "end", "days"] } },
+        "scores": { "type": "object", "required": ["water", "soil_health", "income", "risk", "total"], "additionalProperties": { "type": "number", "minimum": 0, "maximum": 1 } },
+        "indicators": { "type": "object", "required": ["irrigation_mm", "et_mm", "bare_days", "span_days"] },
+        "why": { "type": "array", "items": { "$ref": "#/$defs/msg" } },
+        "evidence": { "type": "array", "items": { "$ref": "#/$defs/evidence" } },
+        "benefits": { "type": "array", "items": { "$ref": "#/$defs/msg" } },
+        "gaps": { "type": "array", "items": { "$ref": "#/$defs/msg" } },
+        "risks": { "type": "array", "items": { "$ref": "#/$defs/msg" } },
+        "confidence": {
+          "type": "object", "required": ["level", "score", "factors"],
+          "properties": { "level": { "enum": ["low", "medium", "high"] }, "score": { "type": "number" }, "factors": { "type": "array", "items": { "$ref": "#/$defs/msg" } } }
+        },
+        "uncertainty": {
+          "type": "object",
+          "required": ["rank_stability", "years_evaluated", "p10", "p50", "p90"],
+          "properties": {
+            "rank_stability": { "type": "number", "minimum": 0, "maximum": 1 },
+            "years_evaluated": { "type": "integer", "minimum": 1 },
+            "p10": { "$ref": "#/$defs/uncertainty_metrics" },
+            "p50": { "$ref": "#/$defs/uncertainty_metrics" },
+            "p90": { "$ref": "#/$defs/uncertainty_metrics" }
+          }
+        },
+        "sim": {
+          "type": "object",
+          "description": "All arrays have length == timeline.days. moisture: 0 = wilting point, 1 = field capacity, >1 wetter. ece in dS/m. crop_idx = index into the strategy's non-fallow seasons (0-based) while a crop is growing, or -1 when the field is bare.",
+          "required": ["moisture", "ece", "root_cm", "canopy", "ks", "irrigation_mm", "crop_idx"],
+          "properties": {
+            "moisture": { "type": "array", "minItems": 4, "maxItems": 4, "items": { "type": "array", "items": { "type": "number" } } },
+            "ece": { "type": "array", "minItems": 4, "maxItems": 4, "items": { "type": "array", "items": { "type": "number" } } },
+            "root_cm": { "type": "array", "items": { "type": "number" } },
+            "canopy": { "type": "array", "items": { "type": "number" } },
+            "ks": { "type": "array", "items": { "type": "number" } },
+            "irrigation_mm": { "type": "array", "items": { "type": "number" } },
+            "crop_idx": { "type": "array", "items": { "type": "integer" } }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+# Dev override: docker compose -f docker-compose.yml -f docker-compose.dev.yml up
+name: journey-soil-dev
+services:
+  api:
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    volumes:
+      - ./api:/srv/api
+      - ./knowledge:/srv/knowledge
+      - ./contracts:/srv/contracts
+    ports:
+      - "8000:8000"

@@ -1,0 +1,59 @@
+# Starting suggestions. The team should confirm each point on the map and replace freely.
+# A demo site = a pre-chosen location where all NASA data is fetched ahead of time (data/packs/demo_sites/<id>.json)
+# and the input preset is tuned, so the live demo never depends on a network call.
+version: 1
+sites:
+- { id: cairo, name_en: "Cairo", name_ar: "القاهرة", lat: 30.05, lon: 31.25, region: delta,
+    preset: { texture: clay_loam, irrigation: drip, water_ec: 1.0, ph: 7.8, pest: none, history: [{crop: wheat, season: winter}, {crop: maize, season: summer}, {crop: wheat, season: winter}] } }
+- { id: alexandria, name_en: "Alexandria", name_ar: "الإسكندرية", lat: 31.20, lon: 29.92, region: delta,
+    preset: { texture: clay_loam, irrigation: drip, water_ec: 1.2, ph: 7.8, pest: none, history: [{crop: wheat, season: winter}, {crop: tomato, season: summer}, {crop: wheat, season: winter}] } }
+- { id: port_said, name_en: "Port Said", name_ar: "بورسعيد", lat: 31.05, lon: 32.35, region: delta,
+    preset: { texture: clay, irrigation: drip, water_ec: 2.5, ph: 8.1, soil_ec: 4.0, pest: none, history: [{crop: wheat, season: winter}, {crop: rice, season: summer}, {crop: wheat, season: winter}] } }
+- { id: suez, name_en: "Suez", name_ar: "السويس", lat: 29.97, lon: 32.55, region: new_lands,
+    preset: { texture: sandy_loam, irrigation: drip, water_ec: 2.0, ph: 8.1, pest: none, water_availability: limited, history: [{crop: tomato, season: winter}, {crop: maize, season: summer}, {crop: wheat, season: winter}] } }
+- { id: damietta, name_en: "Damietta", name_ar: "دمياط", lat: 31.42, lon: 31.81, region: delta,
+    preset: { texture: clay, irrigation: flood, water_ec: 1.2, ph: 7.8, pest: none, history: [{crop: wheat, season: winter}, {crop: rice, season: summer}, {crop: wheat, season: winter}] } }
+- { id: dakahlia, name_en: "Dakahlia", name_ar: "الدقهلية", lat: 31.04, lon: 31.38, region: delta,
+    preset: { texture: clay, irrigation: flood, water_ec: 1.0, ph: 7.8, pest: nematodes, history: [{crop: wheat, season: winter}, {crop: rice, season: summer}, {crop: wheat, season: winter}] } }
+- { id: sharqia, name_en: "Sharqia", name_ar: "الشرقية", lat: 30.59, lon: 31.50, region: delta,
+    preset: { texture: clay_loam, irrigation: flood, water_ec: 1.1, ph: 7.9, pest: none, history: [{crop: wheat, season: winter}, {crop: maize, season: summer}, {crop: wheat, season: winter}] } }
+- { id: qalyubia, name_en: "Qalyubia", name_ar: "القليوبية", lat: 30.31, lon: 31.21, region: delta,
+    preset: { texture: clay_loam, irrigation: flood, water_ec: 0.9, ph: 7.8, pest: none, history: [{crop: wheat, season: winter}, {crop: maize, season: summer}, {crop: wheat, season: winter}] } }
+- { id: beheira, name_en: "Beheira", name_ar: "البحيرة", lat: 30.85, lon: 30.34, region: delta,
+    preset: { texture: sandy_loam, irrigation: sprinkler, water_ec: 1.4, ph: 8.0, pest: none, history: [{crop: wheat, season: winter}, {crop: maize, season: summer}, {crop: wheat, season: winter}] } }
+- { id: ismailia, name_en: "Ismailia", name_ar: "الإسماعيلية", lat: 30.60, lon: 32.27, region: delta,
+    preset: { texture: sandy_loam, irrigation: drip, water_ec: 1.5, ph: 8.1, pest: none, water_availability: limited, history: [{crop: wheat, season: winter}, {crop: maize, season: summer}] } }
+- { id: giza, name_en: "Giza", name_ar: "الجيزة", lat: 29.99, lon: 31.15, region: upper_egypt,
+    preset: { texture: clay_loam, irrigation: flood, water_ec: 0.9, ph: 7.8, pest: none, history: [{crop: wheat, season: winter}, {crop: maize, season: summer}, {crop: berseem, season: winter}] } }
+- { id: beni_suef, name_en: "Beni Suef", name_ar: "بني سويف", lat: 29.07, lon: 31.10, region: upper_egypt,
+    preset: { texture: clay_loam, irrigation: flood, water_ec: 0.9, ph: 7.8, pest: none, history: [{crop: wheat, season: winter}, {crop: maize, season: summer}, {crop: berseem, season: winter}] } }
+- { id: asyut, name_en: "Asyut", name_ar: "أسيوط", lat: 27.18, lon: 31.18, region: upper_egypt,
+    preset: { texture: clay_loam, irrigation: flood, water_ec: 1.0, ph: 7.9, pest: none, history: [{crop: wheat, season: winter}, {crop: maize, season: summer}, {crop: wheat, season: winter}] } }
+- { id: sohag, name_en: "Sohag", name_ar: "سوهاج", lat: 26.56, lon: 31.70, region: upper_egypt,
+    preset: { texture: clay_loam, irrigation: flood, water_ec: 1.0, ph: 7.9, pest: none, history: [{crop: wheat, season: winter}, {crop: sugarcane, season: summer}, {crop: wheat, season: winter}] } }
+- { id: qena, name_en: "Qena", name_ar: "قنا", lat: 26.16, lon: 32.72, region: upper_egypt,
+    preset: { texture: clay_loam, irrigation: flood, water_ec: 1.1, ph: 8.0, pest: none, history: [{crop: wheat, season: winter}, {crop: sugarcane, season: summer}, {crop: wheat, season: winter}] } }
+- { id: luxor, name_en: "Luxor", name_ar: "الأقصر", lat: 25.69, lon: 32.64, region: upper_egypt,
+    preset: { texture: sandy_loam, irrigation: flood, water_ec: 1.2, ph: 8.0, pest: none, history: [{crop: wheat, season: winter}, {crop: sugarcane, season: summer}, {crop: wheat, season: winter}] } }
+- { id: aswan, name_en: "Aswan", name_ar: "أسوان", lat: 24.09, lon: 32.90, region: upper_egypt,
+    preset: { texture: sandy_loam, irrigation: drip, water_ec: 1.5, ph: 8.1, pest: none, water_availability: limited, history: [{crop: wheat, season: winter}, {crop: sugarcane, season: summer}, {crop: wheat, season: winter}] } }
+- { id: red_sea, name_en: "Red Sea", name_ar: "البحر الأحمر", lat: 27.26, lon: 33.81, region: new_lands,
+    preset: { texture: sand, irrigation: drip, water_ec: 2.5, ph: 8.2, pest: none, water_availability: limited, history: [{crop: tomato, season: winter}, {crop: maize, season: summer}, {crop: tomato, season: winter}] } }
+- { id: new_valley, name_en: "New Valley", name_ar: "الوادي الجديد", lat: 25.45, lon: 30.55, region: new_lands,
+    preset: { texture: sand, irrigation: drip, water_ec: 2.0, ph: 8.2, pest: none, water_availability: limited, history: [{crop: wheat, season: winter}, {crop: maize, season: summer}, {crop: wheat, season: winter}] } }
+- { id: matrouh, name_en: "Matrouh", name_ar: "مطروح", lat: 31.35, lon: 27.24, region: new_lands,
+    preset: { texture: sandy_loam, irrigation: none, water_ec: 1.5, ph: 8.0, pest: none, water_availability: limited, history: [{crop: barley, season: winter}, {crop: barley, season: winter}, {crop: wheat, season: winter}] } }
+- { id: north_sinai, name_en: "North Sinai", name_ar: "شمال سيناء", lat: 30.60, lon: 32.27, region: new_lands,
+    preset: { texture: sand, irrigation: drip, water_ec: 2.0, ph: 8.2, pest: none, water_availability: limited, history: [{crop: barley, season: winter}] } }
+- { id: south_sinai, name_en: "South Sinai", name_ar: "جنوب سيناء", lat: 28.56, lon: 33.95, region: new_lands,
+    preset: { texture: sand, irrigation: drip, water_ec: 2.5, ph: 8.3, pest: none, water_availability: limited, history: [{crop: barley, season: winter}] } }
+- { id: kafr_el_sheikh, name_en: "Kafr El-Sheikh (northern Delta)", name_ar: "كفر الشيخ (شمال الدلتا)", lat: 31.11, lon: 30.94, region: delta,
+      preset: { texture: clay_loam, irrigation: flood, water_ec: 2.2, ph: 8.0, pest: none, history: [{crop: wheat, season: winter}, {crop: rice, season: summer}, {crop: wheat, season: winter}] } }
+- { id: gharbia, name_en: "Gharbia (central Delta)", name_ar: "الغربية (وسط الدلتا)", lat: 30.79, lon: 31.0, region: delta,
+      preset: { texture: loam, irrigation: flood, water_ec: 0.8, ph: 7.9, pest: nematodes, history: [{crop: tomato, season: summer}, {crop: wheat, season: winter}, {crop: tomato, season: summer}] } }
+- { id: nubaria, name_en: "West Nubaria (new lands)", name_ar: "النوبارية الغربية (أراضٍ جديدة)", lat: 30.75, lon: 30.15, region: new_lands,
+      preset: { texture: sandy_loam, irrigation: sprinkler, water_ec: 1.5, ph: 8.2, pest: none, water_availability: limited, history: [{crop: maize, season: summer}, {crop: wheat, season: winter}, {crop: maize, season: summer}] } }
+- { id: minya, name_en: "Minya (Upper Egypt)", name_ar: "المنيا (صعيد مصر)", lat: 28.11, lon: 30.75, region: upper_egypt,
+      preset: { texture: silt_loam, irrigation: flood, water_ec: 0.9, ph: 7.8, pest: none, history: [{crop: sugar_beet, season: winter}, {crop: maize, season: summer}, {crop: berseem, season: winter}] } }
+- { id: fayoum, name_en: "Fayoum (saline depression)", name_ar: "الفيوم (منخفض ملحي)", lat: 29.31, lon: 30.84, region: upper_egypt,
+      preset: { texture: clay, irrigation: flood, water_ec: 3.2, ph: 8.1, soil_ec: 5.5, pest: none, history: [{crop: cotton, season: summer}, {crop: wheat, season: winter}, {crop: cotton, season: summer}] } }

@@ -1,0 +1,11 @@
+version: 1
+families:
+  cereal: { name_en: Cereal, name_ar: حبوب }
+  legume: { name_en: Legume, name_ar: بقوليات }
+  solan: { name_en: Nightshade, name_ar: الباذنجانيات }
+  cucur: { name_en: Cucurbit, name_ar: القرعيات }
+  allium: { name_en: Allium, name_ar: الثوميات }
+  fiber: { name_en: Fiber, name_ar: محاصيل ألياف }
+  sugar: { name_en: Sugar crop, name_ar: محاصيل سكرية }
+  leaf: { name_en: Leafy, name_ar: ورقية }
+  oilseed: { name_en: Oilseed, name_ar: بذور زيتية }

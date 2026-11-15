@@ -1,0 +1,477 @@
+﻿Category,Item,Field,Current Value,Proposed Value,Citation,Review Status,Notes
+crop,wheat,family,cereal,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,wheat,seasons,[winter],,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,wheat,legume,False,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,wheat,cycle_days,"[20, 25, 60, 30]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,wheat,kc,"[0.3, 1.15, 0.25]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,wheat,root_cm,150,,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,wheat,salt_thr,6.0,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,wheat,salt_slope,7.1,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,wheat,water,2,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,wheat,n_effect,-1,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,wheat,income,0.4,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,wheat,waterlog_sensitive,False,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,wheat,texture,"{good: [loam, silt_loam, clay_loam], poor: [sand, sandy_loam], unsuitable: []}",,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,barley,family,cereal,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,barley,seasons,[winter],,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,barley,legume,False,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,barley,cycle_days,"[20, 25, 60, 25]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,barley,kc,"[0.3, 1.15, 0.25]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,barley,root_cm,150,,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,barley,salt_thr,8.0,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,barley,salt_slope,5.0,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,barley,water,1,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,barley,n_effect,-1,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,barley,income,0.35,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,barley,waterlog_sensitive,False,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,barley,texture,"{good: [loam, sandy_loam, silt_loam], poor: [], unsuitable: []}",,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,maize,family,cereal,,"FIELD.PUA s5, s6 (source document not present for verification)",Accepted,Seeded default; expert verification required
+crop,maize,seasons,"[summer, nili]",,"FIELD.PUA s5, s6 (source document not present for verification)",Accepted,Seeded default; expert verification required
+crop,maize,legume,False,,"FIELD.PUA s5, s6 (source document not present for verification)",Accepted,Seeded default; expert verification required
+crop,maize,cycle_days,"[25, 40, 40, 30]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,maize,kc,"[0.3, 1.2, 0.35]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,maize,root_cm,150,,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,maize,salt_thr,1.7,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,maize,salt_slope,12.0,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,maize,water,2,,"FIELD.PUA s5, s6 (source document not present for verification)",Accepted,Seeded default; expert verification required
+crop,maize,n_effect,-2,,"FIELD.PUA s5, s6 (source document not present for verification)",Accepted,Seeded default; expert verification required
+crop,maize,income,0.45,,"FIELD.PUA s5, s6 (source document not present for verification)",Accepted,Seeded default; expert verification required
+crop,maize,waterlog_sensitive,False,,"FIELD.PUA s5, s6 (source document not present for verification)",Accepted,Seeded default; expert verification required
+crop,maize,texture,"{good: [loam, sandy_loam, clay_loam], poor: [sand, clay], unsuitable: []}",,"FIELD.PUA s5, s6 (source document not present for verification)",Accepted,Seeded default; expert verification required
+crop,rice,family,cereal,,"FIELD.PUA s5, s6 (approved areas only; paddy ponding not modelled) (source document not present for verification)",Accepted,Seeded default; expert verification required
+crop,rice,seasons,[summer],,"FIELD.PUA s5, s6 (approved areas only; paddy ponding not modelled) (source document not present for verification)",Accepted,Seeded default; expert verification required
+crop,rice,legume,False,,"FIELD.PUA s5, s6 (approved areas only; paddy ponding not modelled) (source document not present for verification)",Accepted,Seeded default; expert verification required
+crop,rice,cycle_days,"[30, 30, 60, 30]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,rice,kc,"[1.05, 1.2, 0.9]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,rice,root_cm,50,,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,rice,salt_thr,3.0,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,rice,salt_slope,12.0,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,rice,water,3,,"FIELD.PUA s5, s6 (approved areas only; paddy ponding not modelled) (source document not present for verification)",Accepted,Seeded default; expert verification required
+crop,rice,n_effect,-1,,"FIELD.PUA s5, s6 (approved areas only; paddy ponding not modelled) (source document not present for verification)",Accepted,Seeded default; expert verification required
+crop,rice,income,0.45,,"FIELD.PUA s5, s6 (approved areas only; paddy ponding not modelled) (source document not present for verification)",Accepted,Seeded default; expert verification required
+crop,rice,waterlog_sensitive,False,,"FIELD.PUA s5, s6 (approved areas only; paddy ponding not modelled) (source document not present for verification)",Accepted,Seeded default; expert verification required
+crop,rice,texture,"{good: [clay, clay_loam], poor: [loam, silt_loam], unsuitable: [sand, sandy_loam]}",,"FIELD.PUA s5, s6 (approved areas only; paddy ponding not modelled) (source document not present for verification)",Accepted,Seeded default; expert verification required
+crop,sorghum,family,cereal,,FIELD.PUA s5 (still a cereal for rotation) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,sorghum,seasons,"[summer, nili]",,FIELD.PUA s5 (still a cereal for rotation) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,sorghum,legume,False,,FIELD.PUA s5 (still a cereal for rotation) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,sorghum,cycle_days,"[20, 35, 40, 30]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,sorghum,kc,"[0.3, 1.05, 0.55]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,sorghum,root_cm,140,,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,sorghum,salt_thr,6.8,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,sorghum,salt_slope,16.0,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,sorghum,water,1,,FIELD.PUA s5 (still a cereal for rotation) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,sorghum,n_effect,-1,,FIELD.PUA s5 (still a cereal for rotation) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,sorghum,income,0.3,,FIELD.PUA s5 (still a cereal for rotation) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,sorghum,waterlog_sensitive,False,,FIELD.PUA s5 (still a cereal for rotation) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,sorghum,texture,"{good: [loam, sandy_loam, clay_loam, silt_loam, clay], poor: [], unsuitable: []}",,FIELD.PUA s5 (still a cereal for rotation) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,berseem,family,legume,,FIELD.PUA s5 (fodder; plan termination before next crop) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,berseem,seasons,[winter],,FIELD.PUA s5 (fodder; plan termination before next crop) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,berseem,legume,True,,FIELD.PUA s5 (fodder; plan termination before next crop) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,berseem,cycle_days,"[20, 30, 100, 20]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,berseem,kc,"[0.4, 0.9, 0.85]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,berseem,root_cm,90,,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,berseem,salt_thr,1.5,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,berseem,salt_slope,5.7,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,berseem,water,2,,FIELD.PUA s5 (fodder; plan termination before next crop) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,berseem,n_effect,2,,FIELD.PUA s5 (fodder; plan termination before next crop) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,berseem,income,0.3,,FIELD.PUA s5 (fodder; plan termination before next crop) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,berseem,waterlog_sensitive,False,,FIELD.PUA s5 (fodder; plan termination before next crop) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,berseem,texture,"{good: [loam, clay_loam, silt_loam], poor: [sand], unsuitable: []}",,FIELD.PUA s5 (fodder; plan termination before next crop) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,faba,family,legume,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,faba,seasons,[winter],,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,faba,legume,True,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,faba,cycle_days,"[25, 35, 50, 30]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,faba,kc,"[0.5, 1.15, 0.3]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,faba,root_cm,100,,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,faba,salt_thr,1.6,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,faba,salt_slope,9.6,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,faba,water,2,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,faba,n_effect,2,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,faba,income,0.4,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,faba,waterlog_sensitive,True,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,faba,texture,"{good: [loam, clay_loam, silt_loam], poor: [sand], unsuitable: []}",,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,lentil,family,legume,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,lentil,seasons,[winter],,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,lentil,legume,True,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,lentil,cycle_days,"[20, 30, 60, 40]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,lentil,kc,"[0.4, 1.1, 0.3]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,lentil,root_cm,100,,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,lentil,salt_thr,1.5,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,lentil,salt_slope,7.0,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,lentil,water,1,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,lentil,n_effect,2,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,lentil,income,0.4,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,lentil,waterlog_sensitive,True,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,lentil,texture,"{good: [loam, silt_loam], poor: [clay, sand], unsuitable: []}",,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,lentil,param_confidence,low,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,peanut,family,legume,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,peanut,seasons,[summer],,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,peanut,legume,True,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,peanut,cycle_days,"[25, 35, 45, 25]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,peanut,kc,"[0.4, 1.15, 0.6]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,peanut,root_cm,100,,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,peanut,salt_thr,3.2,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,peanut,salt_slope,29.0,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,peanut,water,2,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,peanut,n_effect,2,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,peanut,income,0.55,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,peanut,waterlog_sensitive,True,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,peanut,texture,"{good: [sand, sandy_loam], poor: [loam, clay_loam, clay], unsuitable: []}",,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,soybean,family,legume,,"FIELD.PUA s5 (needs inoculation, local seed check) (source document not present for verification)",Accepted,Seeded default; expert verification required
+crop,soybean,seasons,[summer],,"FIELD.PUA s5 (needs inoculation, local seed check) (source document not present for verification)",Accepted,Seeded default; expert verification required
+crop,soybean,legume,True,,"FIELD.PUA s5 (needs inoculation, local seed check) (source document not present for verification)",Accepted,Seeded default; expert verification required
+crop,soybean,cycle_days,"[20, 30, 60, 25]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,soybean,kc,"[0.4, 1.15, 0.5]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,soybean,root_cm,100,,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,soybean,salt_thr,5.0,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,soybean,salt_slope,20.0,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,soybean,water,2,,"FIELD.PUA s5 (needs inoculation, local seed check) (source document not present for verification)",Accepted,Seeded default; expert verification required
+crop,soybean,n_effect,2,,"FIELD.PUA s5 (needs inoculation, local seed check) (source document not present for verification)",Accepted,Seeded default; expert verification required
+crop,soybean,income,0.4,,"FIELD.PUA s5 (needs inoculation, local seed check) (source document not present for verification)",Accepted,Seeded default; expert verification required
+crop,soybean,waterlog_sensitive,False,,"FIELD.PUA s5 (needs inoculation, local seed check) (source document not present for verification)",Accepted,Seeded default; expert verification required
+crop,soybean,texture,"{good: [loam, sandy_loam, silt_loam], poor: [sand, clay], unsuitable: []}",,"FIELD.PUA s5 (needs inoculation, local seed check) (source document not present for verification)",Accepted,Seeded default; expert verification required
+crop,cowpea,family,legume,,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,cowpea,seasons,"[summer, nili]",,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,cowpea,legume,True,,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,cowpea,cycle_days,"[20, 30, 40, 20]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,cowpea,kc,"[0.4, 1.05, 0.35]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,cowpea,root_cm,100,,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,cowpea,salt_thr,4.9,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,cowpea,salt_slope,12.0,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,cowpea,water,1,,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,cowpea,n_effect,1,,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,cowpea,income,0.3,,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,cowpea,waterlog_sensitive,False,,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,cowpea,texture,"{good: [sandy_loam, loam], poor: [clay], unsuitable: []}",,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,cowpea,param_confidence,low,,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,tomato,family,solan,,FIELD.PUA s5 (season depends on system and variety) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,tomato,seasons,"[winter, summer, nili]",,FIELD.PUA s5 (season depends on system and variety) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,tomato,legume,False,,FIELD.PUA s5 (season depends on system and variety) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,tomato,cycle_days,"[30, 40, 45, 30]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,tomato,kc,"[0.6, 1.15, 0.8]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,tomato,root_cm,100,,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,tomato,salt_thr,2.5,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,tomato,salt_slope,9.9,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,tomato,water,2,,FIELD.PUA s5 (season depends on system and variety) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,tomato,n_effect,-2,,FIELD.PUA s5 (season depends on system and variety) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,tomato,income,0.8,,FIELD.PUA s5 (season depends on system and variety) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,tomato,waterlog_sensitive,True,,FIELD.PUA s5 (season depends on system and variety) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,tomato,texture,"{good: [loam, sandy_loam, silt_loam], poor: [sand, clay], unsuitable: []}",,FIELD.PUA s5 (season depends on system and variety) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,potato,family,solan,,FIELD.PUA s5 (certified seed) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,potato,seasons,"[winter, nili]",,FIELD.PUA s5 (certified seed) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,potato,legume,False,,FIELD.PUA s5 (certified seed) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,potato,cycle_days,"[25, 30, 40, 30]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,potato,kc,"[0.5, 1.15, 0.75]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,potato,root_cm,60,,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,potato,salt_thr,1.7,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,potato,salt_slope,12.0,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,potato,water,2,,FIELD.PUA s5 (certified seed) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,potato,n_effect,-2,,FIELD.PUA s5 (certified seed) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,potato,income,0.7,,FIELD.PUA s5 (certified seed) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,potato,waterlog_sensitive,True,,FIELD.PUA s5 (certified seed) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,potato,texture,"{good: [sandy_loam, loam, silt_loam], poor: [clay, sand], unsuitable: []}",,FIELD.PUA s5 (certified seed) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,pepper,family,solan,,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,pepper,seasons,"[summer, winter]",,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,pepper,legume,False,,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,pepper,cycle_days,"[30, 35, 40, 20]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,pepper,kc,"[0.6, 1.05, 0.9]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,pepper,root_cm,80,,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,pepper,salt_thr,1.5,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,pepper,salt_slope,14.0,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,pepper,water,2,,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,pepper,n_effect,-1,,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,pepper,income,0.7,,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,pepper,waterlog_sensitive,True,,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,pepper,texture,"{good: [loam, sandy_loam, silt_loam], poor: [sand, clay], unsuitable: []}",,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,squash,family,cucur,,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,squash,seasons,"[summer, winter]",,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,squash,legume,False,,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,squash,cycle_days,"[20, 30, 30, 20]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,squash,kc,"[0.5, 0.95, 0.75]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,squash,root_cm,100,,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,squash,salt_thr,4.7,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,squash,salt_slope,10.5,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,squash,water,2,,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,squash,n_effect,-1,,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,squash,income,0.5,,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,squash,waterlog_sensitive,False,,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,squash,texture,"{good: [loam, sandy_loam], poor: [clay], unsuitable: []}",,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,cucumber,family,cucur,,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,cucumber,seasons,"[summer, winter]",,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,cucumber,legume,False,,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,cucumber,cycle_days,"[20, 30, 40, 15]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,cucumber,kc,"[0.6, 1.0, 0.75]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,cucumber,root_cm,80,,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,cucumber,salt_thr,2.5,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,cucumber,salt_slope,13.0,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,cucumber,water,2,,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,cucumber,n_effect,-1,,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,cucumber,income,0.5,,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,cucumber,waterlog_sensitive,False,,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,cucumber,texture,"{good: [loam, sandy_loam], poor: [clay], unsuitable: []}",,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,onion,family,allium,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,onion,seasons,[winter],,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,onion,legume,False,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,onion,cycle_days,"[20, 35, 70, 40]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,onion,kc,"[0.7, 1.05, 0.75]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,onion,root_cm,50,,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,onion,salt_thr,1.2,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,onion,salt_slope,16.0,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,onion,water,2,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,onion,n_effect,-1,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,onion,income,0.7,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,onion,waterlog_sensitive,True,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,onion,texture,"{good: [sandy_loam, loam, silt_loam], poor: [clay], unsuitable: []}",,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,garlic,family,allium,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,garlic,seasons,[winter],,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,garlic,legume,False,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,garlic,cycle_days,"[20, 30, 80, 40]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,garlic,kc,"[0.7, 1.0, 0.7]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,garlic,root_cm,50,,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,garlic,salt_thr,3.9,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,garlic,salt_slope,14.0,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,garlic,water,1,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,garlic,n_effect,-1,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,garlic,income,0.7,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,garlic,waterlog_sensitive,True,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,garlic,texture,"{good: [sandy_loam, loam, silt_loam], poor: [clay], unsuitable: []}",,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,garlic,param_confidence,low,,FIELD.PUA s5 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,cotton,family,fiber,,FIELD.PUA s5 (long season; plan the following crop around harvest) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,cotton,seasons,[summer],,FIELD.PUA s5 (long season; plan the following crop around harvest) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,cotton,legume,False,,FIELD.PUA s5 (long season; plan the following crop around harvest) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,cotton,cycle_days,"[30, 50, 60, 55]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,cotton,kc,"[0.35, 1.15, 0.7]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,cotton,root_cm,150,,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,cotton,salt_thr,7.7,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,cotton,salt_slope,5.2,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,cotton,water,2,,FIELD.PUA s5 (long season; plan the following crop around harvest) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,cotton,n_effect,-1,,FIELD.PUA s5 (long season; plan the following crop around harvest) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,cotton,income,0.65,,FIELD.PUA s5 (long season; plan the following crop around harvest) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,cotton,waterlog_sensitive,False,,FIELD.PUA s5 (long season; plan the following crop around harvest) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,cotton,texture,"{good: [loam, clay_loam, silt_loam], poor: [sand], unsuitable: []}",,FIELD.PUA s5 (long season; plan the following crop around harvest) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,sugar_beet,family,sugar,,FIELD.PUA s4 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,sugar_beet,seasons,[winter],,FIELD.PUA s4 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,sugar_beet,legume,False,,FIELD.PUA s4 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,sugar_beet,cycle_days,"[30, 45, 90, 15]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,sugar_beet,kc,"[0.35, 1.2, 0.7]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,sugar_beet,root_cm,120,,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,sugar_beet,salt_thr,7.0,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,sugar_beet,salt_slope,5.9,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,sugar_beet,water,2,,FIELD.PUA s4 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,sugar_beet,n_effect,-1,,FIELD.PUA s4 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,sugar_beet,income,0.55,,FIELD.PUA s4 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,sugar_beet,waterlog_sensitive,False,,FIELD.PUA s4 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,sugar_beet,texture,"{good: [loam, silt_loam, clay_loam], poor: [sand], unsuitable: []}",,FIELD.PUA s4 (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,spinach,family,leaf,,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,spinach,seasons,[winter],,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,spinach,legume,False,,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,spinach,cycle_days,"[20, 20, 15, 5]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,spinach,kc,"[0.7, 1.0, 0.95]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,spinach,root_cm,50,,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,spinach,salt_thr,2.0,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,spinach,salt_slope,7.6,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,spinach,water,1,,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,spinach,n_effect,-1,,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,spinach,income,0.5,,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,spinach,waterlog_sensitive,False,,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,spinach,texture,"{good: [loam, silt_loam], poor: [sand, clay], unsuitable: []}",,prototype table (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,sunflower,family,oilseed,,FIELD.PUA s5 (check market access) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,sunflower,seasons,[summer],,FIELD.PUA s5 (check market access) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,sunflower,legume,False,,FIELD.PUA s5 (check market access) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,sunflower,cycle_days,"[25, 35, 45, 25]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,sunflower,kc,"[0.35, 1.15, 0.35]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,sunflower,root_cm,150,,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,sunflower,salt_thr,4.8,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,sunflower,salt_slope,5.0,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,sunflower,water,1,,FIELD.PUA s5 (check market access) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,sunflower,n_effect,-1,,FIELD.PUA s5 (check market access) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,sunflower,income,0.5,,FIELD.PUA s5 (check market access) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,sunflower,waterlog_sensitive,False,,FIELD.PUA s5 (check market access) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,sunflower,texture,"{good: [loam, sandy_loam, silt_loam], poor: [clay], unsuitable: []}",,FIELD.PUA s5 (check market access) (source document not present for verification),Accepted,Seeded default; expert verification required
+crop,sugarcane,family,sugar,,"FIELD.PUA s4: perennial, not part of annual rotation (source document not present for verification)",Accepted,Seeded default; expert verification required
+crop,sugarcane,seasons,[summer],,"FIELD.PUA s4: perennial, not part of annual rotation (source document not present for verification)",Accepted,Seeded default; expert verification required
+crop,sugarcane,legume,False,,"FIELD.PUA s4: perennial, not part of annual rotation (source document not present for verification)",Accepted,Seeded default; expert verification required
+crop,sugarcane,cycle_days,"[60, 90, 180, 60]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,sugarcane,kc,"[0.4, 1.25, 0.75]",,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,sugarcane,root_cm,150,,"FAO-56, exact crop/table mapping requires verification",Accepted,Seeded default; expert verification required
+crop,sugarcane,salt_thr,1.7,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,sugarcane,salt_slope,5.9,,"FAO-29 / Maas-Hoffman, exact crop/value requires verification",Accepted,Seeded default; expert verification required
+crop,sugarcane,water,3,,"FIELD.PUA s4: perennial, not part of annual rotation (source document not present for verification)",Accepted,Seeded default; expert verification required
+crop,sugarcane,n_effect,-2,,"FIELD.PUA s4: perennial, not part of annual rotation (source document not present for verification)",Accepted,Seeded default; expert verification required
+crop,sugarcane,income,0.55,,"FIELD.PUA s4: perennial, not part of annual rotation (source document not present for verification)",Accepted,Seeded default; expert verification required
+crop,sugarcane,waterlog_sensitive,False,,"FIELD.PUA s4: perennial, not part of annual rotation (source document not present for verification)",Accepted,Seeded default; expert verification required
+crop,sugarcane,texture,"{good: [loam, clay_loam, silt_loam], poor: [sand], unsuitable: []}",,"FIELD.PUA s4: perennial, not part of annual rotation (source document not present for verification)",Accepted,Seeded default; expert verification required
+crop,sugarcane,perennial,True,,"FIELD.PUA s4: perennial, not part of annual rotation (source document not present for verification)",Accepted,Seeded default; expert verification required
+crop_defaults,all_crops,source,fao_default,,knowledge/sources.yaml,Accepted,Check: fao_default is not a registered source ID
+crop_defaults,all_crops,reviewed,False,,knowledge/crops.yaml,Accepted,Must remain false until expert signoff
+rotation_repeat,all_rotations,same_family_as_previous,-25,,FIELD.PUA section 6 (source document absent),Accepted,
+rotation_repeat,all_rotations,same_family_in_two_of_last_three,-10,,FIELD.PUA section 6 (source document absent),Accepted,
+rotation_repeat,all_rotations,new_family_bonus,8,,FIELD.PUA section 6 (source document absent),Accepted,
+rotation_rule,cereal_to_legume,prev_family,cereal,,FIELD.PUA s6 row 1,Accepted,Match rule and score against original FIELD.PUA
+rotation_rule,cereal_to_legume,next_family,legume,,FIELD.PUA s6 row 1,Accepted,Match rule and score against original FIELD.PUA
+rotation_rule,cereal_to_legume,score,12,,FIELD.PUA s6 row 1,Accepted,Match rule and score against original FIELD.PUA
+rotation_rule,legume_to_cereal,prev_family,legume,,FIELD.PUA s6 row 5 (no fixed N credit),Accepted,Match rule and score against original FIELD.PUA
+rotation_rule,legume_to_cereal,next_family,cereal,,FIELD.PUA s6 row 5 (no fixed N credit),Accepted,Match rule and score against original FIELD.PUA
+rotation_rule,legume_to_cereal,score,8,,FIELD.PUA s6 row 5 (no fixed N credit),Accepted,Match rule and score against original FIELD.PUA
+rotation_rule,continuous_maize,prev_crop,maize,,FIELD.PUA s6 row 2,Accepted,Match rule and score against original FIELD.PUA
+rotation_rule,continuous_maize,next_crop,maize,,FIELD.PUA s6 row 2,Accepted,Match rule and score against original FIELD.PUA
+rotation_rule,continuous_maize,score,-20,,FIELD.PUA s6 row 2,Accepted,Match rule and score against original FIELD.PUA
+rotation_rule,high_residue_to_broadleaf,prev_family,cereal,,FIELD.PUA s6 row 4,Accepted,Match rule and score against original FIELD.PUA
+rotation_rule,high_residue_to_broadleaf,next_not_family,cereal,,FIELD.PUA s6 row 4,Accepted,Match rule and score against original FIELD.PUA
+rotation_rule,high_residue_to_broadleaf,score,4,,FIELD.PUA s6 row 4,Accepted,Match rule and score against original FIELD.PUA
+rotation_rule,rice_to_nonrice,prev_crop,rice,,FIELD.PUA s6 row 6,Accepted,Match rule and score against original FIELD.PUA
+rotation_rule,rice_to_nonrice,next_not_crop,rice,,FIELD.PUA s6 row 6,Accepted,Match rule and score against original FIELD.PUA
+rotation_rule,rice_to_nonrice,score,6,,FIELD.PUA s6 row 6,Accepted,Match rule and score against original FIELD.PUA
+rotation_pest,pest_rules,host_families,"{nematodes: [solan, cucur], soil_borne: [solan, cucur]}",,"FIELD.PUA s6 rows 3 and 7, s9 rule 4",Accepted,Host status is species-specific; validate with agronomist
+rotation_pest,pest_rules,gap_key,gap.pest_diagnosis,,"FIELD.PUA s6 rows 3 and 7, s9 rule 4",Accepted,Host status is species-specific; validate with agronomist
+season_windows,general,turnaround_days,10,,FIELD.PUA section 4 (not available),Accepted,
+season_window,winter,earliest_sow,11-01,,FIELD.PUA section 4 (not available),Accepted,"Indicative date; validate by governorate, cultivar and system"
+season_window,winter,latest_sow,12-15,,FIELD.PUA section 4 (not available),Accepted,"Indicative date; validate by governorate, cultivar and system"
+season_window,winter,latest_harvest,05-31,,FIELD.PUA section 4 (not available),Accepted,"Indicative date; validate by governorate, cultivar and system"
+season_window,winter,label_en,Winter,,FIELD.PUA section 4 (not available),Accepted,"Indicative date; validate by governorate, cultivar and system"
+season_window,winter,label_ar,شتوي,,FIELD.PUA section 4 (not available),Accepted,"Indicative date; validate by governorate, cultivar and system"
+season_window,summer,earliest_sow,04-01,,FIELD.PUA section 4 (not available),Accepted,"Indicative date; validate by governorate, cultivar and system"
+season_window,summer,latest_sow,06-15,,FIELD.PUA section 4 (not available),Accepted,"Indicative date; validate by governorate, cultivar and system"
+season_window,summer,latest_harvest,10-31,,FIELD.PUA section 4 (not available),Accepted,"Indicative date; validate by governorate, cultivar and system"
+season_window,summer,label_en,Summer,,FIELD.PUA section 4 (not available),Accepted,"Indicative date; validate by governorate, cultivar and system"
+season_window,summer,label_ar,صيفي,,FIELD.PUA section 4 (not available),Accepted,"Indicative date; validate by governorate, cultivar and system"
+season_window,nili,earliest_sow,07-15,,FIELD.PUA section 4 (not available),Accepted,"Indicative date; validate by governorate, cultivar and system"
+season_window,nili,latest_sow,08-31,,FIELD.PUA section 4 (not available),Accepted,"Indicative date; validate by governorate, cultivar and system"
+season_window,nili,latest_harvest,11-30,,FIELD.PUA section 4 (not available),Accepted,"Indicative date; validate by governorate, cultivar and system"
+season_window,nili,label_en,Nili,,FIELD.PUA section 4 (not available),Accepted,"Indicative date; validate by governorate, cultivar and system"
+season_window,nili,label_ar,نيلي,,FIELD.PUA section 4 (not available),Accepted,"Indicative date; validate by governorate, cultivar and system"
+season_windows,general,next_season,"{nili: winter, summer: winter, winter: summer}",,Project rule; agronomic validation required,Accepted,
+season_windows,general,perennials_excluded,True,,Project rule; agronomic validation required,Accepted,
+crop_family,cereal,name_en,Cereal,,Agronomist / botanical reference required,Accepted,
+crop_family,cereal,name_ar,حبوب,,Agronomist / botanical reference required,Accepted,
+crop_family,legume,name_en,Legume,,Agronomist / botanical reference required,Accepted,
+crop_family,legume,name_ar,بقوليات,,Agronomist / botanical reference required,Accepted,
+crop_family,solan,name_en,Nightshade,,Agronomist / botanical reference required,Accepted,
+crop_family,solan,name_ar,الباذنجانيات,,Agronomist / botanical reference required,Accepted,
+crop_family,cucur,name_en,Cucurbit,,Agronomist / botanical reference required,Accepted,
+crop_family,cucur,name_ar,القرعيات,,Agronomist / botanical reference required,Accepted,
+crop_family,allium,name_en,Allium,,Agronomist / botanical reference required,Accepted,
+crop_family,allium,name_ar,الثوميات,,Agronomist / botanical reference required,Accepted,
+crop_family,fiber,name_en,Fiber,,Agronomist / botanical reference required,Accepted,
+crop_family,fiber,name_ar,محاصيل ألياف,,Agronomist / botanical reference required,Accepted,
+crop_family,sugar,name_en,Sugar crop,,Agronomist / botanical reference required,Accepted,
+crop_family,sugar,name_ar,محاصيل سكرية,,Agronomist / botanical reference required,Accepted,
+crop_family,leaf,name_en,Leafy,,Agronomist / botanical reference required,Accepted,
+crop_family,leaf,name_ar,ورقية,,Agronomist / botanical reference required,Accepted,
+crop_family,oilseed,name_en,Oilseed,,Agronomist / botanical reference required,Accepted,
+crop_family,oilseed,name_ar,بذور زيتية,,Agronomist / botanical reference required,Accepted,
+demo_site,kafr_el_sheikh,name_en,Kafr El-Sheikh (northern Delta),,Team starting suggestion; confirm location,Accepted,
+demo_site,kafr_el_sheikh,lat,31.11,,Team starting suggestion; confirm location,Accepted,
+demo_site,kafr_el_sheikh,lon,30.94,,Team starting suggestion; confirm location,Accepted,
+demo_site,kafr_el_sheikh,region,delta,,Team starting suggestion; confirm location,Accepted,
+demo_site_preset,kafr_el_sheikh,texture,clay_loam,,Unverified demo preset; field measurement or documented source required,Accepted,
+demo_site_preset,kafr_el_sheikh,irrigation,flood,,Unverified demo preset; field measurement or documented source required,Accepted,
+demo_site_preset,kafr_el_sheikh,water_ec,2.2,,Unverified demo preset; field measurement or documented source required,Accepted,
+demo_site_preset,kafr_el_sheikh,ph,8.0,,Unverified demo preset; field measurement or documented source required,Accepted,
+demo_site_preset,kafr_el_sheikh,pest,none,,Unverified demo preset; field measurement or documented source required,Accepted,
+demo_site_preset,kafr_el_sheikh,history,"[{crop: wheat, season: winter}, {crop: rice, season: summer}, {crop: wheat, season: winter}]",,Unverified demo preset; field measurement or documented source required,Accepted,
+demo_site,gharbia,name_en,Gharbia (central Delta),,Team starting suggestion; confirm location,Accepted,
+demo_site,gharbia,lat,30.79,,Team starting suggestion; confirm location,Accepted,
+demo_site,gharbia,lon,31.0,,Team starting suggestion; confirm location,Accepted,
+demo_site,gharbia,region,delta,,Team starting suggestion; confirm location,Accepted,
+demo_site_preset,gharbia,texture,loam,,Unverified demo preset; field measurement or documented source required,Accepted,
+demo_site_preset,gharbia,irrigation,flood,,Unverified demo preset; field measurement or documented source required,Accepted,
+demo_site_preset,gharbia,water_ec,0.8,,Unverified demo preset; field measurement or documented source required,Accepted,
+demo_site_preset,gharbia,ph,7.9,,Unverified demo preset; field measurement or documented source required,Accepted,
+demo_site_preset,gharbia,pest,nematodes,,Unverified demo preset; field measurement or documented source required,Accepted,
+demo_site_preset,gharbia,history,"[{crop: tomato, season: summer}, {crop: wheat, season: winter}, {crop: tomato, season: summer}]",,Unverified demo preset; field measurement or documented source required,Accepted,
+demo_site,nubaria,name_en,West Nubaria (new lands),,Team starting suggestion; confirm location,Accepted,
+demo_site,nubaria,lat,30.75,,Team starting suggestion; confirm location,Accepted,
+demo_site,nubaria,lon,30.15,,Team starting suggestion; confirm location,Accepted,
+demo_site,nubaria,region,new_lands,,Team starting suggestion; confirm location,Accepted,
+demo_site_preset,nubaria,texture,sandy_loam,,Unverified demo preset; field measurement or documented source required,Accepted,
+demo_site_preset,nubaria,irrigation,sprinkler,,Unverified demo preset; field measurement or documented source required,Accepted,
+demo_site_preset,nubaria,water_ec,1.5,,Unverified demo preset; field measurement or documented source required,Accepted,
+demo_site_preset,nubaria,ph,8.2,,Unverified demo preset; field measurement or documented source required,Accepted,
+demo_site_preset,nubaria,pest,none,,Unverified demo preset; field measurement or documented source required,Accepted,
+demo_site_preset,nubaria,water_availability,limited,,Unverified demo preset; field measurement or documented source required,Accepted,
+demo_site_preset,nubaria,history,"[{crop: maize, season: summer}, {crop: wheat, season: winter}, {crop: maize, season: summer}]",,Unverified demo preset; field measurement or documented source required,Accepted,
+demo_site,minya,name_en,Minya (Upper Egypt),,Team starting suggestion; confirm location,Accepted,
+demo_site,minya,lat,28.11,,Team starting suggestion; confirm location,Accepted,
+demo_site,minya,lon,30.75,,Team starting suggestion; confirm location,Accepted,
+demo_site,minya,region,upper_egypt,,Team starting suggestion; confirm location,Accepted,
+demo_site_preset,minya,texture,silt_loam,,Unverified demo preset; field measurement or documented source required,Accepted,
+demo_site_preset,minya,irrigation,flood,,Unverified demo preset; field measurement or documented source required,Accepted,
+demo_site_preset,minya,water_ec,0.9,,Unverified demo preset; field measurement or documented source required,Accepted,
+demo_site_preset,minya,ph,7.8,,Unverified demo preset; field measurement or documented source required,Accepted,
+demo_site_preset,minya,pest,none,,Unverified demo preset; field measurement or documented source required,Accepted,
+demo_site_preset,minya,history,"[{crop: sugar_beet, season: winter}, {crop: maize, season: summer}, {crop: berseem,
+    season: winter}]",,Unverified demo preset; field measurement or documented source required,Accepted,
+demo_site,fayoum,name_en,Fayoum (saline depression),,Team starting suggestion; confirm location,Accepted,
+demo_site,fayoum,lat,29.31,,Team starting suggestion; confirm location,Accepted,
+demo_site,fayoum,lon,30.84,,Team starting suggestion; confirm location,Accepted,
+demo_site,fayoum,region,upper_egypt,,Team starting suggestion; confirm location,Accepted,
+demo_site_preset,fayoum,texture,clay,,Unverified demo preset; field measurement or documented source required,Accepted,
+demo_site_preset,fayoum,irrigation,flood,,Unverified demo preset; field measurement or documented source required,Accepted,
+demo_site_preset,fayoum,water_ec,3.2,,Unverified demo preset; field measurement or documented source required,Accepted,
+demo_site_preset,fayoum,ph,8.1,,Unverified demo preset; field measurement or documented source required,Accepted,
+demo_site_preset,fayoum,soil_ec,5.5,,Unverified demo preset; field measurement or documented source required,Accepted,
+demo_site_preset,fayoum,pest,none,,Unverified demo preset; field measurement or documented source required,Accepted,
+demo_site_preset,fayoum,history,"[{crop: cotton, season: summer}, {crop: wheat, season: winter}, {crop: cotton, season: summer}]",,Unverified demo preset; field measurement or documented source required,Accepted,
+soil_texture,sand,sand,88,,FIELD.PUA s3 row 1,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,sand,silt,6,,FIELD.PUA s3 row 1,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,sand,clay,6,,FIELD.PUA s3 row 1,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,sand,drainage,excessive,,FIELD.PUA s3 row 1,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,sand,label_en,Sand,,FIELD.PUA s3 row 1,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,sand,label_ar,رملية,,FIELD.PUA s3 row 1,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,sandy_loam,sand,65,,FIELD.PUA s3 row 2,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,sandy_loam,silt,25,,FIELD.PUA s3 row 2,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,sandy_loam,clay,10,,FIELD.PUA s3 row 2,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,sandy_loam,drainage,fast,,FIELD.PUA s3 row 2,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,sandy_loam,label_en,Loamy sand / sandy loam,,FIELD.PUA s3 row 2,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,sandy_loam,label_ar,رملية طميية,,FIELD.PUA s3 row 2,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,loam,sand,40,,FIELD.PUA s3 row 3,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,loam,silt,40,,FIELD.PUA s3 row 3,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,loam,clay,20,,FIELD.PUA s3 row 3,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,loam,drainage,balanced,,FIELD.PUA s3 row 3,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,loam,label_en,Loam,,FIELD.PUA s3 row 3,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,loam,label_ar,طميية,,FIELD.PUA s3 row 3,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,silt_loam,sand,20,,FIELD.PUA s3 row 4,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,silt_loam,silt,65,,FIELD.PUA s3 row 4,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,silt_loam,clay,15,,FIELD.PUA s3 row 4,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,silt_loam,drainage,moderate,,FIELD.PUA s3 row 4,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,silt_loam,label_en,Silt loam,,FIELD.PUA s3 row 4,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,silt_loam,label_ar,طميية غرينية,,FIELD.PUA s3 row 4,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,clay_loam,sand,32,,FIELD.PUA s3 row 5,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,clay_loam,silt,33,,FIELD.PUA s3 row 5,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,clay_loam,clay,35,,FIELD.PUA s3 row 5,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,clay_loam,drainage,moderate_slow,,FIELD.PUA s3 row 5,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,clay_loam,label_en,Clay loam,,FIELD.PUA s3 row 5,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,clay_loam,label_ar,طينية طميية,,FIELD.PUA s3 row 5,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,clay,sand,20,,FIELD.PUA s3 row 6,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,clay,silt,25,,FIELD.PUA s3 row 6,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,clay,clay,55,,FIELD.PUA s3 row 6,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,clay,drainage,slow,,FIELD.PUA s3 row 6,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,clay,label_en,Clay / heavy clay,,FIELD.PUA s3 row 6,Accepted,"Representative class centroid, not a site measurement"
+soil_texture,clay,label_ar,طينية,,FIELD.PUA s3 row 6,Accepted,"Representative class centroid, not a site measurement"
+soil_condition,saline_sodic,note,"Condition, not texture. Needs measured ECe and sodicity; drainage decides if reclamation is feasible.",,FIELD.PUA s3 row 8,Accepted,Expert review required
+soil_condition,saline_sodic,ref,FIELD.PUA s3 row 8,,FIELD.PUA s3 row 8,Accepted,Expert review required
+soil_condition,calcareous,note,"High pH, micronutrient limits. Diagnose before treating.",,FIELD.PUA s3 row 7,Accepted,Expert review required
+soil_condition,calcareous,ref,FIELD.PUA s3 row 7,,FIELD.PUA s3 row 7,Accepted,Expert review required
+soil_condition,organic_peaty,note,Not a default for the Delta; specialised crops only after testing.,,FIELD.PUA s3 row 9,Accepted,Expert review required
+soil_condition,organic_peaty,ref,FIELD.PUA s3 row 9,,FIELD.PUA s3 row 9,Accepted,Expert review required
+soil_layer_template,layer_1,top,0,,Project assumption; technical source / expert review required,Accepted,
+soil_layer_template,layer_1,bottom,20,,Project assumption; technical source / expert review required,Accepted,
+soil_layer_template,layer_1,clay_shift,0,,Project assumption; technical source / expert review required,Accepted,
+soil_layer_template,layer_1,sand_shift,0,,Project assumption; technical source / expert review required,Accepted,
+soil_layer_template,layer_1,om_factor,1.0,,Project assumption; technical source / expert review required,Accepted,
+soil_layer_template,layer_2,top,20,,Project assumption; technical source / expert review required,Accepted,
+soil_layer_template,layer_2,bottom,50,,Project assumption; technical source / expert review required,Accepted,
+soil_layer_template,layer_2,clay_shift,4,,Project assumption; technical source / expert review required,Accepted,
+soil_layer_template,layer_2,sand_shift,-3,,Project assumption; technical source / expert review required,Accepted,
+soil_layer_template,layer_2,om_factor,0.55,,Project assumption; technical source / expert review required,Accepted,
+soil_layer_template,layer_3,top,50,,Project assumption; technical source / expert review required,Accepted,
+soil_layer_template,layer_3,bottom,90,,Project assumption; technical source / expert review required,Accepted,
+soil_layer_template,layer_3,clay_shift,8,,Project assumption; technical source / expert review required,Accepted,
+soil_layer_template,layer_3,sand_shift,-6,,Project assumption; technical source / expert review required,Accepted,
+soil_layer_template,layer_3,om_factor,0.28,,Project assumption; technical source / expert review required,Accepted,
+soil_layer_template,layer_4,top,90,,Project assumption; technical source / expert review required,Accepted,
+soil_layer_template,layer_4,bottom,150,,Project assumption; technical source / expert review required,Accepted,
+soil_layer_template,layer_4,clay_shift,0,,Project assumption; technical source / expert review required,Accepted,
+soil_layer_template,layer_4,sand_shift,8,,Project assumption; technical source / expert review required,Accepted,
+soil_layer_template,layer_4,om_factor,0.12,,Project assumption; technical source / expert review required,Accepted,

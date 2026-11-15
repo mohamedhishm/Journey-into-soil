@@ -1,0 +1,25 @@
+.env
+*.pyc
+__pycache__/
+.venv/
+.pytest_cache/
+.ruff_cache/
+node_modules/
+web/dist/
+data/raw/
+data/app.db
+*.sqlite
+.DS_Store
+.netrc
+powershell.bat
+
+# local secrets and run logs
+.env.*
+!.env.example
+!web/.env.example
+logs/
+
+# root build artifacts erroneously generated
+/index.html
+/assets/
+

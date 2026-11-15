@@ -1,0 +1,12 @@
+# Indicative Egyptian season windows (FIELD.PUA s4: vary by governorate, cultivar and system; Nili is regional/transitional).
+# Dates are month-day. A crop is feasible only if sowing >= earliest, sowing <= latest_sow, and harvest <= latest_harvest.
+# turnaround_days = bare days needed between harvest and next sowing (land preparation).
+version: 1
+turnaround_days: 10
+seasons:
+  winter: { earliest_sow: "11-01", latest_sow: "12-15", latest_harvest: "05-31", label_en: Winter, label_ar: شتوي }
+  summer: { earliest_sow: "04-01", latest_sow: "06-15", latest_harvest: "10-31", label_en: Summer, label_ar: صيفي }
+  nili:   { earliest_sow: "07-15", latest_sow: "08-31", latest_harvest: "11-30", label_en: Nili, label_ar: نيلي }
+# What follows what in the planning horizon (nili only as a first season).
+next_season: { winter: summer, summer: winter, nili: winter }
+perennials_excluded: true

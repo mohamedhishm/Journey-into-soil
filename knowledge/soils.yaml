@@ -1,0 +1,20 @@
+# Texture groups from FIELD.PUA section 3. Percentages are representative class centroids (sand/silt/clay %),
+# NOT measurements. Texture is separate from conditions (saline/sodic, calcareous, organic): see `conditions`.
+version: 1
+textures:
+  sand:       { sand: 88, silt: 6,  clay: 6,  drainage: excessive, label_en: Sand, label_ar: رملية, ref: "FIELD.PUA s3 row 1" }
+  sandy_loam: { sand: 65, silt: 25, clay: 10, drainage: fast,      label_en: Loamy sand / sandy loam, label_ar: رملية طميية, ref: "FIELD.PUA s3 row 2" }
+  loam:       { sand: 40, silt: 40, clay: 20, drainage: balanced,  label_en: Loam, label_ar: طميية, ref: "FIELD.PUA s3 row 3" }
+  silt_loam:  { sand: 20, silt: 65, clay: 15, drainage: moderate,  label_en: Silt loam, label_ar: طميية غرينية, ref: "FIELD.PUA s3 row 4" }
+  clay_loam:  { sand: 32, silt: 33, clay: 35, drainage: moderate_slow, label_en: Clay loam, label_ar: طينية طميية, ref: "FIELD.PUA s3 row 5" }
+  clay:       { sand: 20, silt: 25, clay: 55, drainage: slow,      label_en: Clay / heavy clay, label_ar: طينية, ref: "FIELD.PUA s3 row 6" }
+conditions:
+  saline_sodic: { note: "Condition, not texture. Needs measured ECe and sodicity; drainage decides if reclamation is feasible.", ref: "FIELD.PUA s3 row 8" }
+  calcareous:   { note: "High pH, micronutrient limits. Diagnose before treating.", ref: "FIELD.PUA s3 row 7" }
+  organic_peaty: { note: "Not a default for the Delta; specialised crops only after testing.", ref: "FIELD.PUA s3 row 9" }
+# Layer template: depth (cm) and how much each deeper layer shifts toward clay (percentage points) and loses organic matter.
+layers:
+  - { top: 0,  bottom: 20,  clay_shift: 0,  sand_shift: 0,   om_factor: 1.0 }
+  - { top: 20, bottom: 50,  clay_shift: 4,  sand_shift: -3,  om_factor: 0.55 }
+  - { top: 50, bottom: 90,  clay_shift: 8,  sand_shift: -6,  om_factor: 0.28 }
+  - { top: 90, bottom: 150, clay_shift: 0,  sand_shift: 8,   om_factor: 0.12 }

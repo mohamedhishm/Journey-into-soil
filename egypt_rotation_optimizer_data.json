@@ -1,0 +1,720 @@
+{
+  "title": "Egypt Crop Rotation Optimizer — curated public reference data",
+  "version": "0.1",
+  "prepared_date": "2026-11-12",
+  "scope": "Ten representative crops documented in the project field guide; public agronomy values are separated from Egypt-local evidence. Not a fully calibrated production dataset.",
+  "units_note": "FAO-56 Kc values are dimensionless reference coefficients. Root depths are metres. Kc and root-depth values are not automatically Egypt-calibrated.",
+  "data_availability_note": "User confirms weather and SoilGrids were downloaded for all configured governorates, but those Windows files were not available in this workspace to ingest. This file therefore provides the crop/catalog reference layer, not the user’s raw governorate JSON.",
+  "optimizer_warning": "Do not use null/missing water_units, soil_health_points, income_points or stage thermal thresholds as zero. The current demo optimizer requires integer proxy coefficients; obtain expert-approved local scores or modify the model to derive water outcomes from ET0 × Kc and simulations. All candidates must be simulated and ranked using real project outputs.",
+  "crops": [
+    {
+      "id": "wheat",
+      "scientific_name": "Triticum aestivum L.",
+      "family": "Poaceae",
+      "egypt_seasons": [
+        "winter"
+      ],
+      "egypt_window": "Generally planted November and harvested April (Egypt-wide broad window; cultivar/region-specific detail still needed).",
+      "window_scope": "Egypt national broad description",
+      "sources": [
+        "egypt_wheat",
+        "calendar_wheat_trials"
+      ],
+      "fao56_reference": {
+        "kc_initial": "0.4 frozen soil; 0.7 non-frozen soil",
+        "kc_mid": "1.15",
+        "kc_end": "0.25–0.4",
+        "max_effective_root_depth_m": [
+          1.5,
+          1.8
+        ],
+        "depletion_fraction_p_at_ETc_5mm_day": 0.55,
+        "parameter_scope": "FAO-56 general reference; not Egypt-calibrated"
+      },
+      "thermal_evidence": [],
+      "optimizer_local_coefficients": {
+        "water_units": null,
+        "soil_health_points": null,
+        "income_points": null,
+        "heat_threshold_by_stage_c": null,
+        "cold_threshold_by_stage_c": null
+      },
+      "gaps": [
+        "No verified Egypt-local, crop-stage heat/cold injury thresholds.",
+        "Need locally validated stage lengths, Kc calibration, soil profile and rotation history."
+      ],
+      "source_refs": [
+        {
+          "publisher": "USDA FAS Cairo",
+          "title": "Egypt's Domestic Wheat Procurement — 2025",
+          "url": "https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Egypt%27s%20Domestic%20Wheat%20Procurement%20--%202025_Cairo_Egypt_EG2025-0023"
+        },
+        {
+          "publisher": "Agronomy / MDPI",
+          "title": "Yield Responses to Total Water Input from Irrigation and Rainfall for Six Wheat Cultivars in Four Agro-Climatic Zones of Egypt",
+          "url": "https://www.mdpi.com/2073-4395/14/12/3057"
+        }
+      ]
+    },
+    {
+      "id": "barley",
+      "scientific_name": "Hordeum vulgare L.",
+      "family": "Poaceae",
+      "egypt_seasons": [
+        "winter"
+      ],
+      "egypt_window": "A peer-reviewed source reports late November–mid-December planting and April–May harvest as broad Egypt context; a Western Sinai saline-soil experiment tested Oct 25, Nov 14 and Dec 4 (not a national prescription).",
+      "window_scope": "Secondary Egypt source plus a site-specific trial",
+      "sources": [
+        "barley_egypt",
+        "barley_trial"
+      ],
+      "fao56_reference": {
+        "kc_initial": "0.30 cereal-group default",
+        "kc_mid": "1.15",
+        "kc_end": "0.25",
+        "max_effective_root_depth_m": [
+          1.0,
+          1.5
+        ],
+        "depletion_fraction_p_at_ETc_5mm_day": 0.55,
+        "parameter_scope": "FAO-56 general reference; not Egypt-calibrated"
+      },
+      "thermal_evidence": [],
+      "optimizer_local_coefficients": {
+        "water_units": null,
+        "soil_health_points": null,
+        "income_points": null,
+        "heat_threshold_by_stage_c": null,
+        "cold_threshold_by_stage_c": null
+      },
+      "gaps": [
+        "No verified Egypt-specific stage heat/cold thresholds or local Kc/root calibration.",
+        "Experimental sowing dates are not official regional rules."
+      ],
+      "source_refs": [
+        {
+          "publisher": "Asian Journal of Agriculture and Rural Development",
+          "title": "Evaluation of Barley Cultivated Areas’ Actual Status in Egyptian Newly Reclaimed Lands",
+          "url": "https://www.researchgate.net/publication/361685285_Evaluation_of_Barley_Cultivated_Areas%27_Actual_Status_in_Egyptian_Newly_Reclaimed_Lands"
+        },
+        {
+          "publisher": "Agronomy / MDPI",
+          "title": "Sowing Date and Genotype Influence on Yield and Quality of Dual-Purpose Barley in Saline Soil under Arid Conditions",
+          "url": "https://www.mdpi.com/2073-4395/11/4/717"
+        }
+      ]
+    },
+    {
+      "id": "faba_bean",
+      "scientific_name": "Vicia faba L.",
+      "family": "Fabaceae",
+      "egypt_seasons": [
+        "winter"
+      ],
+      "egypt_window": "North Delta experiment at El-Bosaily tested Oct 1, mid-Oct, Nov 1, mid-Nov and Dec 1 in two years; results are local to site/cultivar, not a national planting rule.",
+      "window_scope": "North Delta field trial",
+      "sources": [
+        "faba_egypt",
+        "faba_taxonomy",
+        "faba_heat"
+      ],
+      "fao56_reference": {
+        "kc_initial": "0.5",
+        "kc_mid": "1.15",
+        "kc_end": "0.30 dry seed; 1.10 fresh harvest",
+        "max_effective_root_depth_m": [
+          0.5,
+          0.7
+        ],
+        "depletion_fraction_p_at_ETc_5mm_day": 0.45,
+        "parameter_scope": "FAO-56 general reference; not Egypt-calibrated"
+      },
+      "thermal_evidence": [
+        {
+          "metric": "Heat response literature reports damage especially above 30°C; ICARDA also describes 35°C flowering survival as a breeding goal. These are not compatible operational thresholds and must not be used as a hard cutoff.",
+          "stage": "flowering/reproductive context",
+          "scope": "general, not Egypt-local",
+          "usable_as_optimizer_threshold": false
+        }
+      ],
+      "optimizer_local_coefficients": {
+        "water_units": null,
+        "soil_health_points": null,
+        "income_points": null,
+        "heat_threshold_by_stage_c": null,
+        "cold_threshold_by_stage_c": null
+      },
+      "gaps": [
+        "No validated Egypt stage-specific heat/cold threshold.",
+        "Choose dry seed versus fresh harvest Kc profile; obtain local stage durations and rooting data."
+      ],
+      "source_refs": [
+        {
+          "publisher": "FAO AGRIS / Annals of Agricultural Science",
+          "title": "Productivity and irrigation requirements of faba-bean in North Delta of Egypt in relation to planting dates",
+          "url": "https://agris.fao.org/search/en/providers/122535/records/65e00156b766d82b1803e60c"
+        },
+        {
+          "publisher": "Kew Plants of the World Online",
+          "title": "Fabaceae | Plants of the World Online",
+          "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30000147-2/general-information"
+        },
+        {
+          "publisher": "Peer-reviewed research / PubMed Central",
+          "title": "Genetic Dissection of Heat Stress Tolerance in Faba Bean (Vicia faba L.)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9103424/"
+        }
+      ]
+    },
+    {
+      "id": "berseem",
+      "scientific_name": "Trifolium alexandrinum L.",
+      "family": "Fabaceae",
+      "egypt_seasons": [
+        "winter"
+      ],
+      "egypt_window": "Main annual winter forage legume in Egypt; exact governorate and cutting calendar not verified.",
+      "window_scope": "Egypt crop role; no detailed official dates",
+      "sources": [
+        "berseem_egypt"
+      ],
+      "fao56_reference": {
+        "kc_initial": "0.40",
+        "kc_mid": "0.90 averaged cutting effects; 1.15 individual cutting periods",
+        "kc_end": "0.85 averaged cutting effects; 1.10 individual cutting periods",
+        "max_effective_root_depth_m": null,
+        "depletion_fraction_p_at_ETc_5mm_day": null,
+        "parameter_scope": "FAO-56 generic berseem hay reference, not Egypt-calibrated; do not mix averaged and individual-cutting profiles"
+      },
+      "thermal_evidence": [],
+      "optimizer_local_coefficients": {
+        "water_units": null,
+        "soil_health_points": null,
+        "income_points": null,
+        "heat_threshold_by_stage_c": null,
+        "cold_threshold_by_stage_c": null
+      },
+      "gaps": [
+        "No quantitative Egypt rooting depth, cutting schedule, stage durations or thermal thresholds.",
+        "Use either average-cut or individual-cut Kc profile according to management."
+      ],
+      "source_refs": [
+        {
+          "publisher": "Asian Journal of Crop Science",
+          "title": "Egyptian Clover (Trifolium alexandrinum L.) Breeding in Egypt: A Review",
+          "url": "https://scialert.net/fulltext/?doi=ajcs.2013.325.337"
+        }
+      ]
+    },
+    {
+      "id": "maize",
+      "scientific_name": "Zea mays L.",
+      "family": "Poaceae",
+      "egypt_seasons": [
+        "summer"
+      ],
+      "egypt_window": "A peer-reviewed Egypt study cites May 20–30 as a general recommended window; separate Toshka results concern arid Upper Egypt and cannot be generalized nationally.",
+      "window_scope": "Egypt broad claim plus site-specific Toshka experiment",
+      "sources": [
+        "maize_egypt",
+        "maize_taxonomy"
+      ],
+      "fao56_reference": {
+        "kc_initial": "0.30 cereal-group default",
+        "kc_mid": "1.20 grain maize",
+        "kc_end": "0.35–0.60 grain maize",
+        "max_effective_root_depth_m": [
+          1.0,
+          1.7
+        ],
+        "depletion_fraction_p_at_ETc_5mm_day": 0.55,
+        "parameter_scope": "FAO-56 general reference; not Egypt-calibrated"
+      },
+      "thermal_evidence": [],
+      "optimizer_local_coefficients": {
+        "water_units": null,
+        "soil_health_points": null,
+        "income_points": null,
+        "heat_threshold_by_stage_c": null,
+        "cold_threshold_by_stage_c": null
+      },
+      "gaps": [
+        "No reliable Egypt crop-stage heat/cold threshold; no local Kc calibration.",
+        "Need crop type, planting date, cultivar, region and stage lengths."
+      ],
+      "source_refs": [
+        {
+          "publisher": "Scientific Reports / PubMed Central",
+          "title": "Impact of different sowing dates and irrigation levels on NPK absorption, yield and water use efficiency of maize",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10415405/"
+        },
+        {
+          "publisher": "Kew Plants of the World Online",
+          "title": "Zea mays L.",
+          "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:426810-1"
+        }
+      ]
+    },
+    {
+      "id": "rice",
+      "scientific_name": "Oryza sativa L.",
+      "family": "Poaceae",
+      "egypt_seasons": [
+        "summer"
+      ],
+      "egypt_window": "USDA FAS describes cultivation April–October in designated Nile Delta areas; another Delta study describes May–September. These are broad cultivation-season bounds, not precise governorate planting dates.",
+      "window_scope": "Egypt summer period; designated rice areas only; verify current annual legal allocation",
+      "sources": [
+        "rice_egypt",
+        "rice_calendar"
+      ],
+      "fao56_reference": {
+        "kc_initial": "1.05 (paddy water 0.10–0.20 m assumed); climate-adjusted values vary",
+        "kc_mid": "1.20",
+        "kc_end": "0.60–0.90",
+        "max_effective_root_depth_m": null,
+        "depletion_fraction_p_at_ETc_5mm_day": null,
+        "parameter_scope": "FAO-56 generic paddy reference; not Egypt-calibrated"
+      },
+      "thermal_evidence": [
+        {
+          "metric": "37.2 ± 0.2",
+          "unit": "°C daytime temperature threshold estimate above which seed set falls significantly",
+          "stage": "flowering/anthesis",
+          "scope": "multi-study general synthesis, not Egypt variety specific",
+          "usable_as_optimizer_threshold": false
+        }
+      ],
+      "optimizer_local_coefficients": {
+        "water_units": null,
+        "soil_health_points": null,
+        "income_points": null,
+        "heat_threshold_by_stage_c": null,
+        "cold_threshold_by_stage_c": null
+      },
+      "gaps": [
+        "No validated Egyptian rice cultivar stage threshold or local Kc calibration.",
+        "No numeric root depth/p verified. Rice is legally restricted to designated areas; refresh current-year decree."
+      ],
+      "source_refs": [
+        {
+          "publisher": "USDA FAS Cairo",
+          "title": "Egyptian Parliament Approves the Prohibition of Rice Cultivation in Non-Designated Areas",
+          "url": "https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Egyptian%20Parliament%20Approves%20the%20Prohibition%20of%20Rice%20Cultivation%20in%20Non-Designated%20Areas%20_Cairo_Egypt_05-25-2021.pdf"
+        },
+        {
+          "publisher": "Scientific Data / Nature",
+          "title": "RiceAtlas, a spatial database of global rice calendars and production",
+          "url": "https://www.nature.com/articles/sdata201774"
+        }
+      ]
+    },
+    {
+      "id": "cotton",
+      "scientific_name": "Gossypium barbadense L. (Egyptian cotton context)",
+      "family": "Malvaceae",
+      "egypt_seasons": [
+        "summer"
+      ],
+      "egypt_window": "USDA FAS reports mid-March–mid-May planting; harvest begins September and continues to mid-December. National window is not governorate/cultivar resolved.",
+      "window_scope": "Egypt national report",
+      "sources": [
+        "cotton_egypt",
+        "cotton_thermal"
+      ],
+      "fao56_reference": {
+        "kc_initial": "0.35",
+        "kc_mid": "1.15–1.20",
+        "kc_end": "0.50–0.70",
+        "max_effective_root_depth_m": [
+          1.0,
+          1.7
+        ],
+        "depletion_fraction_p_at_ETc_5mm_day": 0.65,
+        "stage_days_example": [
+          30,
+          50,
+          60,
+          55
+        ],
+        "total_days_example": 195,
+        "parameter_scope": "FAO-56 general reference; stage-length example includes Egypt but is not current/local calibration"
+      },
+      "thermal_evidence": [
+        {
+          "metric": "above 36°C",
+          "stage": "flowering/boll development",
+          "scope": "literature-reported in Egypt-focused paper, not trial-calibrated cutoff",
+          "usable_as_optimizer_threshold": false
+        },
+        {
+          "metric": "night below 20°C",
+          "stage": "boll development",
+          "scope": "literature-reported; not an operational Egypt threshold",
+          "usable_as_optimizer_threshold": false
+        }
+      ],
+      "optimizer_local_coefficients": {
+        "water_units": null,
+        "soil_health_points": null,
+        "income_points": null,
+        "heat_threshold_by_stage_c": null,
+        "cold_threshold_by_stage_c": null
+      },
+      "gaps": [
+        "Temperature values are literature-reported only; no validated stage response curve.",
+        "Needs cultivar-specific durations and local Kc calibration."
+      ],
+      "source_refs": [
+        {
+          "publisher": "USDA FAS Cairo",
+          "title": "Cotton and Products Annual: Egypt, Report EG2026-0003",
+          "url": "https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Cotton+and+Products+Annual_Cairo_Egypt_EG2026-0003.pdf"
+        },
+        {
+          "publisher": "Agronomie / HAL open archive; Egypt Cotton Research Institute-affiliated authors",
+          "title": "Effect of climatic factors during the development periods of flowering and boll formation on the production of Egyptian cotton",
+          "url": "https://hal.science/hal-00885942/document"
+        }
+      ]
+    },
+    {
+      "id": "sorghum",
+      "scientific_name": "Sorghum bicolor (L.) Moench",
+      "family": "Poaceae",
+      "egypt_seasons": [
+        "summer"
+      ],
+      "egypt_window": "El-Kharga grain sorghum trial favored July 1–15 for tested cultivars; Matrouh forage trials used mid-May dates. These are location/type-specific, not a national calendar.",
+      "window_scope": "Site-specific Egypt trials; distinguish grain versus forage",
+      "sources": [
+        "sorghum_calendar",
+        "sorghum_temp"
+      ],
+      "fao56_reference": {
+        "kc_initial": "0.30 cereal-group default for grain; 0.50 sweet sorghum",
+        "kc_mid": "1.00–1.10 grain; 1.20 sweet",
+        "kc_end": "0.55 grain; 1.05 sweet",
+        "max_effective_root_depth_m": [
+          1.0,
+          2.0
+        ],
+        "depletion_fraction_p_at_ETc_5mm_day": 0.55,
+        "parameter_scope": "FAO-56 generic reference; crop type matters; not Egypt-calibrated"
+      },
+      "thermal_evidence": [
+        {
+          "metric": "minimum germination about 8°C; optimum 21–35°C",
+          "stage": "germination/emergence",
+          "scope": "general FAO/ICRISAT crop reference, not Egypt-local injury thresholds",
+          "usable_as_optimizer_threshold": false
+        }
+      ],
+      "optimizer_local_coefficients": {
+        "water_units": null,
+        "soil_health_points": null,
+        "income_points": null,
+        "heat_threshold_by_stage_c": null,
+        "cold_threshold_by_stage_c": null
+      },
+      "gaps": [
+        "No Egypt stage-specific heat/cold damage thresholds.",
+        "Choose grain/sweet/forage type; stage duration and local root/water validation needed."
+      ],
+      "source_refs": [
+        {
+          "publisher": "Middle East Journal of Applied Sciences / Desert Research Center, Egypt",
+          "title": "Response of some sorghum cultivars to sowing dates and phosphorus fertilization under New Valley conditions",
+          "url": "https://www.curresweb.com/mejas/mejas/2016/1150-1159.pdf"
+        },
+        {
+          "publisher": "FAO Water Reports 33 / ICRISAT chapter",
+          "title": "Crop yield response to water: Sorghum",
+          "url": "https://www.fao.org/4/i2800e/i2800e07.pdf"
+        }
+      ]
+    },
+    {
+      "id": "soybean",
+      "scientific_name": "Glycine max (L.) Merr.",
+      "family": "Fabaceae",
+      "egypt_seasons": [
+        "summer"
+      ],
+      "egypt_window": "ARC Giza field study tested mid-May, early June and mid-June in 2020–2021; cultivar-specific findings, not a universal Egypt window.",
+      "window_scope": "Giza field trial",
+      "sources": [
+        "soy_egypt",
+        "soy_root",
+        "soy_taxonomy"
+      ],
+      "fao56_reference": {
+        "kc_initial": "0.40 legume-group default",
+        "kc_mid": "1.15",
+        "kc_end": "0.50",
+        "max_effective_root_depth_m": [
+          0.6,
+          0.6
+        ],
+        "depletion_fraction_p_at_ETc_5mm_day": null,
+        "parameter_scope": "FAO-56 generic reference; not Egypt-calibrated"
+      },
+      "thermal_evidence": [],
+      "optimizer_local_coefficients": {
+        "water_units": null,
+        "soil_health_points": null,
+        "income_points": null,
+        "heat_threshold_by_stage_c": null,
+        "cold_threshold_by_stage_c": null
+      },
+      "gaps": [
+        "No Egypt stage-specific thermal thresholds; no local p/rooting progression.",
+        "Cultivar and inoculation/seed availability need local validation."
+      ],
+      "source_refs": [
+        {
+          "publisher": "Scientific Reports / Nature; ARC Giza field study",
+          "title": "Impact of planting dates on yield and resistance of soybean varieties to soybean stem fly in Egypt",
+          "url": "https://www.nature.com/articles/s41598-025-19034-2"
+        },
+        {
+          "publisher": "FAO",
+          "title": "FAO-66 Annex 3: Rooting depth",
+          "url": "https://www.fao.org/4/y5749e/y5749e0j.htm"
+        },
+        {
+          "publisher": "USDA NRCS PLANTS Database",
+          "title": "Glycine max classification",
+          "url": "https://plants.sc.egov.usda.gov/classification/79390"
+        }
+      ]
+    },
+    {
+      "id": "peanut",
+      "scientific_name": "Arachis hypogaea L.",
+      "family": "Fabaceae",
+      "egypt_seasons": [
+        "summer"
+      ],
+      "egypt_window": "Egypt field trials planted on May 1 (Upper Egypt) and May 13–15 (Inshas); dates are trial observations, not universal sowing recommendations.",
+      "window_scope": "Specific Egypt field experiments",
+      "sources": [
+        "peanut_egypt",
+        "peanut_temp",
+        "peanut_growth"
+      ],
+      "fao56_reference": {
+        "kc_initial": "0.40 legume-group default",
+        "kc_mid": "1.15",
+        "kc_end": "0.60",
+        "max_effective_root_depth_m": null,
+        "depletion_fraction_p_at_ETc_5mm_day": null,
+        "parameter_scope": "FAO-56 generic reference; Kc initial is group default; not Egypt-calibrated"
+      },
+      "thermal_evidence": [
+        {
+          "metric": "27.5°C vegetative optimum; 23.5°C fruit/pod weight optimum in one chamber study",
+          "stage": "early vegetative and fruit/pod growth",
+          "scope": "general controlled study, not Egypt field thresholds",
+          "usable_as_optimizer_threshold": false
+        }
+      ],
+      "optimizer_local_coefficients": {
+        "water_units": null,
+        "soil_health_points": null,
+        "income_points": null,
+        "heat_threshold_by_stage_c": null,
+        "cold_threshold_by_stage_c": null
+      },
+      "gaps": [
+        "No validated Egypt root-depth/p value or stage-specific heat/cold threshold.",
+        "Plant dates are from individual trials, not an official regional crop calendar."
+      ],
+      "source_refs": [
+        {
+          "publisher": "Peer-reviewed research / PubMed Central",
+          "title": "Response of peanut plant to bio-fertilizers and plant residues under sandy soil conditions",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9884651/"
+        },
+        {
+          "publisher": "Peanut Science",
+          "title": "Effect of Temperature Treatment on Peanut Vegetative and Fruit Growth",
+          "url": "https://peanutscience.com/article/id/175/"
+        },
+        {
+          "publisher": "Asian Journal of Advances in Agricultural Research",
+          "title": "Impact of Foliar Application of Silicon and Selenium on Peanut under Different Planting Dates",
+          "url": "https://journalajaar.com/index.php/AJAAR/article/view/241"
+        }
+      ]
+    }
+  ],
+  "common_missing_inputs": [
+    "Farmer’s actual crop history per field and planning horizon",
+    "Field-specific farmer goals and constraints (water limit, exclusions, equipment, market access)",
+    "Current locally reviewed crop catalog/variety list per governorate and seed availability",
+    "Crop- and stage-specific validated heat/cold thresholds in Egyptian varieties",
+    "Local calibration of Kc, root depth, stage lengths and soil hydraulic values",
+    "Measured field soil tests and irrigation-water EC for higher confidence",
+    "Current regional prices/costs for income optimization",
+    "Current-year legally designated rice cultivation areas/limits"
+  ],
+  "sources": {
+    "fao56_kc": {
+      "publisher": "FAO",
+      "title": "FAO-56 Chapter 6: ETc—Single crop coefficient",
+      "url": "https://www.fao.org/4/x0490e/x0490e0b.htm"
+    },
+    "fao56_soil": {
+      "publisher": "FAO",
+      "title": "FAO-56 Chapter 8: ETc under soil water stress conditions",
+      "url": "https://www.fao.org/4/x0490e/x0490e0e.htm"
+    },
+    "egypt_wheat": {
+      "publisher": "USDA FAS Cairo",
+      "title": "Egypt's Domestic Wheat Procurement — 2025",
+      "url": "https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Egypt%27s%20Domestic%20Wheat%20Procurement%20--%202025_Cairo_Egypt_EG2025-0023"
+    },
+    "barley_egypt": {
+      "publisher": "Asian Journal of Agriculture and Rural Development",
+      "title": "Evaluation of Barley Cultivated Areas’ Actual Status in Egyptian Newly Reclaimed Lands",
+      "url": "https://www.researchgate.net/publication/361685285_Evaluation_of_Barley_Cultivated_Areas%27_Actual_Status_in_Egyptian_Newly_Reclaimed_Lands"
+    },
+    "barley_trial": {
+      "publisher": "Agronomy / MDPI",
+      "title": "Sowing Date and Genotype Influence on Yield and Quality of Dual-Purpose Barley in Saline Soil under Arid Conditions",
+      "url": "https://www.mdpi.com/2073-4395/11/4/717"
+    },
+    "faba_egypt": {
+      "publisher": "FAO AGRIS / Annals of Agricultural Science",
+      "title": "Productivity and irrigation requirements of faba-bean in North Delta of Egypt in relation to planting dates",
+      "url": "https://agris.fao.org/search/en/providers/122535/records/65e00156b766d82b1803e60c"
+    },
+    "faba_heat": {
+      "publisher": "Peer-reviewed research / PubMed Central",
+      "title": "Genetic Dissection of Heat Stress Tolerance in Faba Bean (Vicia faba L.)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9103424/"
+    },
+    "berseem_egypt": {
+      "publisher": "Asian Journal of Crop Science",
+      "title": "Egyptian Clover (Trifolium alexandrinum L.) Breeding in Egypt: A Review",
+      "url": "https://scialert.net/fulltext/?doi=ajcs.2013.325.337"
+    },
+    "maize_egypt": {
+      "publisher": "Scientific Reports / PubMed Central",
+      "title": "Impact of different sowing dates and irrigation levels on NPK absorption, yield and water use efficiency of maize",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10415405/"
+    },
+    "rice_egypt": {
+      "publisher": "USDA FAS Cairo",
+      "title": "Egyptian Parliament Approves the Prohibition of Rice Cultivation in Non-Designated Areas",
+      "url": "https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Egyptian%20Parliament%20Approves%20the%20Prohibition%20of%20Rice%20Cultivation%20in%20Non-Designated%20Areas%20_Cairo_Egypt_05-25-2021.pdf"
+    },
+    "rice_heat": {
+      "publisher": "Plant Communications / PubMed Central",
+      "title": "From the floret to the canopy: High temperature tolerance during flowering",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10721465/"
+    },
+    "rice_calendar": {
+      "publisher": "Scientific Data / Nature",
+      "title": "RiceAtlas, a spatial database of global rice calendars and production",
+      "url": "https://www.nature.com/articles/sdata201774"
+    },
+    "cotton_egypt": {
+      "publisher": "USDA FAS Cairo",
+      "title": "Cotton and Products Annual: Egypt, Report EG2026-0003",
+      "url": "https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Cotton+and+Products+Annual_Cairo_Egypt_EG2026-0003.pdf"
+    },
+    "cotton_thermal": {
+      "publisher": "Agronomie / HAL open archive; Egypt Cotton Research Institute-affiliated authors",
+      "title": "Effect of climatic factors during the development periods of flowering and boll formation on the production of Egyptian cotton",
+      "url": "https://hal.science/hal-00885942/document"
+    },
+    "sorghum_calendar": {
+      "publisher": "Middle East Journal of Applied Sciences / Desert Research Center, Egypt",
+      "title": "Response of some sorghum cultivars to sowing dates and phosphorus fertilization under New Valley conditions",
+      "url": "https://www.curresweb.com/mejas/mejas/2016/1150-1159.pdf"
+    },
+    "sorghum_temp": {
+      "publisher": "FAO Water Reports 33 / ICRISAT chapter",
+      "title": "Crop yield response to water: Sorghum",
+      "url": "https://www.fao.org/4/i2800e/i2800e07.pdf"
+    },
+    "soy_egypt": {
+      "publisher": "Scientific Reports / Nature; ARC Giza field study",
+      "title": "Impact of planting dates on yield and resistance of soybean varieties to soybean stem fly in Egypt",
+      "url": "https://www.nature.com/articles/s41598-025-19034-2"
+    },
+    "soy_root": {
+      "publisher": "FAO",
+      "title": "FAO-66 Annex 3: Rooting depth",
+      "url": "https://www.fao.org/4/y5749e/y5749e0j.htm"
+    },
+    "peanut_egypt": {
+      "publisher": "Peer-reviewed research / PubMed Central",
+      "title": "Response of peanut plant to bio-fertilizers and plant residues under sandy soil conditions",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9884651/"
+    },
+    "peanut_temp": {
+      "publisher": "Peanut Science",
+      "title": "Effect of Temperature Treatment on Peanut Vegetative and Fruit Growth",
+      "url": "https://peanutscience.com/article/id/175/"
+    },
+    "calendar": {
+      "publisher": "FAO",
+      "title": "FAO Crop Calendar – Information Tool for Crop Production",
+      "url": "https://cropcalendar.apps.fao.org/"
+    },
+    "egypt_rotation": {
+      "publisher": "FAO",
+      "title": "Egypt — Trade Reforms and Food Security: Country Case Studies",
+      "url": "https://www.fao.org/4/y4632e/y4632e0c.htm"
+    },
+    "prices_fao": {
+      "publisher": "FAO",
+      "title": "FAO data on food and agriculture prices",
+      "url": "https://www.fao.org/prices/en"
+    },
+    "capmas_income": {
+      "publisher": "CAPMAS Egypt",
+      "title": "Annual Bulletin of Agricultural Income Estimates 2016–2017",
+      "url": "https://metadata.capmas.gov.eg/en/index.php/catalog/360"
+    },
+    "seed_egypt": {
+      "publisher": "Wageningen University & Research",
+      "title": "Assessing the performance of Egypt’s seed sector",
+      "url": "https://edepot.wur.nl/629970"
+    },
+    "calendar_wheat_trials": {
+      "publisher": "Agronomy / MDPI",
+      "title": "Yield Responses to Total Water Input from Irrigation and Rainfall for Six Wheat Cultivars in Four Agro-Climatic Zones of Egypt",
+      "url": "https://www.mdpi.com/2073-4395/14/12/3057"
+    },
+    "maize_taxonomy": {
+      "publisher": "Kew Plants of the World Online",
+      "title": "Zea mays L.",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:426810-1"
+    },
+    "sorghum_taxonomy": {
+      "publisher": "Kew Plants of the World Online",
+      "title": "Sorghum bicolor (L.) Moench",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:422090-1"
+    },
+    "faba_taxonomy": {
+      "publisher": "Kew Plants of the World Online",
+      "title": "Fabaceae | Plants of the World Online",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30000147-2/general-information"
+    },
+    "soy_taxonomy": {
+      "publisher": "USDA NRCS PLANTS Database",
+      "title": "Glycine max classification",
+      "url": "https://plants.sc.egov.usda.gov/classification/79390"
+    },
+    "peanut_growth": {
+      "publisher": "Asian Journal of Advances in Agricultural Research",
+      "title": "Impact of Foliar Application of Silicon and Selenium on Peanut under Different Planting Dates",
+      "url": "https://journalajaar.com/index.php/AJAAR/article/view/241"
+    }
+  }
+}

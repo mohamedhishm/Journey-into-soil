@@ -1,0 +1,2 @@
+# Domain-expert review packet (PhD + outside helper)
+Ask them to review, in this order: (1) `knowledge/crops.yaml` Kc, root depth, season length, salt threshold/slope, water class, heat; (2) `knowledge/rotation_rules.yaml` vs FIELD.PUA section 6; (3) `knowledge/season_windows.yaml` dates; (4) demo-site presets; (5) wording of risks and "needs local review". Record changes by setting `reviewed: true` plus a `source` per value. Export of values in table form: `knowledge/review/`. Do not accept numbers without a citation.

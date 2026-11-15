@@ -1,0 +1,26 @@
+{
+  "plan_id": "demo-kafr-el-sheikh",
+  "field_id": "demo-kafr-el-sheikh-field-01",
+  "site_id": "kafr_el_sheikh",
+  "planning_years": 3,
+  "seasons_per_year": ["winter", "summer"],
+  "minimum_candidate_count_including_baseline": 3,
+  "time_limit_seconds": 5,
+  "constraints": {
+    "min_family_distance_slots": 2,
+    "max_uses_per_crop": 1
+  },
+  "data_paths": {
+    "weather": "data/raw/power/kafr_el_sheikh.json",
+    "soil": "data/raw/soilgrids/kafr_el_sheikh.json"
+  },
+  "baseline": [
+    {"year_index": 1, "season": "winter", "crop_id": "wheat"},
+    {"year_index": 1, "season": "summer", "crop_id": "peanut"},
+    {"year_index": 2, "season": "winter", "crop_id": "barley"},
+    {"year_index": 2, "season": "summer", "crop_id": "cotton"},
+    {"year_index": 3, "season": "winter", "crop_id": "berseem"},
+    {"year_index": 3, "season": "summer", "crop_id": "maize"}
+  ],
+  "notice": "DEMO ONLY: replace the baseline, location, seasons, family gap, and file paths with verified field records before interpreting any candidate as an agronomic recommendation."
+}

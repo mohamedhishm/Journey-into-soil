@@ -1,0 +1,35 @@
+# Challenge Checklist (NASA Space Apps 2026: Field Shift)
+
+- [x] **>=3 rotation strategies including the existing baseline**:
+  - Emits `existing` (baseline history), `primary` (top multi-objective recommendation), and `contrast` (alternative strategy trading water efficiency vs net income).
+  - Implemented in `api/app/engine/pipeline.py` and displayed in `web/src/features/results/StrategyCards.tsx`.
+- [x] **Per strategy explanations**:
+  - Detailed `why` explanation, agronomic `evidence` citations, quantifiable `benefits`, explicit `gaps` in information, and `risks` requiring local extension review.
+  - Implemented in `api/app/engine/pipeline.py` and surfaced in `web/src/features/results/Panels.tsx` and `ResultsDashboard.tsx`.
+- [x] **Farmer priorities input drives ranking**:
+  - Configurable weight vector for water savings, soil organic matter, gross margin, and climate risk in Stage 4 of the guided wizard.
+  - Implemented in `api/app/engine/scoring.py` and `web/src/features/inputs/SimulationWizard.tsx`.
+- [x] **Climate uncertainty & confidence transparently explained**:
+  - Schema 1.1.0 15-year historical climate analog sweep (2011–2025) reporting $p10, p50, p90$ distributions and `rank_stability`.
+  - Confidence penalization for high climate variance (`conf.high_climate_variance`) or unreviewed data seeds.
+  - Implemented in `api/app/engine/uncertainty.py` and `web/src/features/results/Panels.tsx`.
+- [x] **NASA data panel with honest status per product**:
+  - Direct listing of NASA POWER, SMAP (`SPL3SMP_E`), and VIIRS NDVI (`VNP13A1` v002) with status (`pack`, `placeholder`, `planned`).
+  - Explicit depth limitation labels (surface 0–5 cm vs root zone) and indicative satellite-vs-model statistical comparison.
+  - Implemented in `api/app/services/nasa.py` and `web/src/features/results/NasaEvidence.tsx`.
+- [x] **Glossary & Agronomic Explanations**:
+  - Bilingual glossary and technical descriptions available in `contracts/i18n/` and directly queryable via the persistent floating AI assistant.
+  - Implemented in `web/src/features/assistant/FloatingAssistantWidget.tsx`.
+- [x] **"Support, not replace" disclaimer visible**:
+  - Non-negotiable advisory disclaimers rendered prominently in the top navigation, simulation wizard, executive dashboard, and landing page.
+  - Implemented in `web/src/features/navigation/TopNavBar.tsx` and `web/src/features/results/ResultsDashboard.tsx`.
+- [x] **Climate scenario shifts & timeline scrubber**:
+  - Scenario sliders for temperature shift ($\Delta T$) and precipitation factor ($\Delta P$) in Stage 4 of the wizard.
+  - Interactive day-by-day timeline playback showing moisture depletion, root growth, and stage progression.
+  - Implemented in `web/src/features/results/Timeline.tsx`.
+- [x] **Full bilingual internationalization (English LTR + Arabic RTL), dark/light mode, and mobile responsiveness**:
+  - 100% key parity between English and Arabic catalogs verified by `scripts/check_i18n.py`.
+  - Theme switcher with high-contrast accessibility in both light and dark modes.
+  - Responsive layouts tested across 390px mobile viewports to desktop resolutions.
+- [x] **AI-use disclosure in submission**:
+  - Clear and honest declaration of AI tools (Claude and Gemini for code scaffolding, visual asset generation, and assistant drafting) included in `docs/pitch/submission.md`.

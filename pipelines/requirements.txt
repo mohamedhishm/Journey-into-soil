@@ -1,0 +1,5 @@
+requests>=2.31
+earthaccess>=0.10
+fsspec>=2024.6
+h5py>=3.10
+numpy>=1.26

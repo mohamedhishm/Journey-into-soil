@@ -1,0 +1,8 @@
+# Archetypes = the four farmer priorities. `weights` bias the scoring when an archetype is the focus.
+version: 1
+priorities: [water, soil_health, income, risk]
+archetype_focus_multiplier: 3.0
+strategies:
+  existing: { label_key: strategy.existing }
+  primary:  { label_key: strategy.primary }
+  contrast: { label_key: strategy.contrast }

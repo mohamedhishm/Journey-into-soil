@@ -1,0 +1,20 @@
+# FIELD.PUA section 6 as rules. Scores are rotation points (before weighting). Hard pest rules override scores.
+version: 1
+repeat:
+  same_family_as_previous: -25
+  same_family_in_two_of_last_three: -10
+  new_family_bonus: 8
+rules:
+  - { id: cereal_to_legume, prev_family: cereal, next_family: legume, score: 12, why_key: rot.cereal_to_legume, ref: "FIELD.PUA s6 row 1" }
+  - { id: legume_to_cereal, prev_family: legume, next_family: cereal, score: 8, why_key: rot.legume_to_cereal, ref: "FIELD.PUA s6 row 5 (no fixed N credit)" }
+  - { id: continuous_maize, prev_crop: maize, next_crop: maize, score: -20, caution_key: rot.continuous_maize, ref: "FIELD.PUA s6 row 2" }
+  - { id: high_residue_to_broadleaf, prev_family: cereal, next_not_family: cereal, score: 4, why_key: rot.residue_diversify, ref: "FIELD.PUA s6 row 4" }
+  - { id: rice_to_nonrice, prev_crop: rice, next_not_crop: rice, score: 6, caution_key: rot.rice_transition, ref: "FIELD.PUA s6 row 6" }
+# Hard rule: if a soil-borne problem is recorded, crops in host families are excluded (conservative; host status is
+# species-specific, so the diagnosis gap is always reported).
+pest:
+  host_families:
+    nematodes: [solan, cucur]
+    soil_borne: [solan, cucur]
+  gap_key: gap.pest_diagnosis
+  ref: "FIELD.PUA s6 rows 3 and 7, s9 rule 4"

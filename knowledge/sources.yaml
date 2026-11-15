@@ -1,0 +1,78 @@
+
+# Every evidence item in a result points at one of these ids.
+version: 1
+sources:
+  guide:     { title: "Field-Based Crop Recommendation Guide (FIELD.PUA)", kind: team_data, url: null }
+  fao56:     { title: "FAO Irrigation and Drainage Paper 56: Crop evapotranspiration", kind: reference, url: "https://www.fao.org/4/x0490e/x0490e00.htm" }
+  fao_salt:  { title: "FAO Irrigation and Drainage Paper 29: Water quality for agriculture (salt tolerance)", kind: reference, url: "https://www.fao.org/4/t0234e/t0234e00.htm" }
+  saxton:    { title: "Saxton and Rawls (2006), Soil water characteristic estimates by texture and organic matter", kind: reference, url: null }
+  power:     { title: "NASA POWER daily agroclimatology", kind: nasa, url: "https://power.larc.nasa.gov/" }
+  gpm:
+    title: "NASA GPM IMERG precipitation"
+    kind: nasa
+    url: "https://gpm.nasa.gov/data/imerg"
+    short_name: "GPM_3IMERGDF"
+    version: "07"
+    verified_on: "2026-11-12"
+  smap:
+    title: "NASA SMAP soil moisture"
+    kind: nasa
+    url: "https://smap.jpl.nasa.gov/"
+    short_name: "SPL3SMP_E"
+    version: "006"
+    verified_on: "2026-11-12"
+  ndvi:
+    title: "NASA VIIRS vegetation indices (VNP13A1 v002), 16-day 500 m NDVI"
+    kind: nasa
+    url: "https://lpdaac.usgs.gov/products/vnp13a1v002/"
+    short_name: "VNP13A1"
+    version: "002"
+    verified_on: "2026-11-13"
+  soilgrids: { title: "ISRIC SoilGrids (modelled, 250 m)", kind: dataset, url: "https://soilgrids.org/" }
+  smap_guide:
+    title: "SMAP Enhanced L3 Radiometer Global Daily 9 km EASE-Grid Soil Moisture v006 User Guide (NSIDC)"
+    kind: reference
+    url: "https://nsidc.org/sites/default/files/documents/user-guide/spl3smp_e-v006-userguide.pdf"
+    verified_on: "2026-11-13"
+  modis_vi_guide:
+    title: "MODIS Vegetation Index Products (MOD13Q1 v061), LP DAAC"
+    kind: reference
+    url: "https://lpdaac.usgs.gov/products/mod13q1v061/"
+    verified_on: "2026-11-13"
+  viirs_vi_guide:
+    title: "VIIRS Vegetation Index Products (VNP13A1 v002), LP DAAC"
+    kind: reference
+    url: "https://lpdaac.usgs.gov/products/vnp13a1v002/"
+    verified_on: "2026-11-13"
+  nasa_ndvi_eo:
+    title: "NASA Earth Observatory, Measuring Vegetation (NDVI and EVI)"
+    kind: reference
+    url: "https://earthobservatory.nasa.gov/features/MeasuringVegetation"
+    verified_on: "2026-11-13"
+  sare_rotation:
+    title: "SARE, Crop Rotation with Cover Crops (Managing Cover Crops Profitably)"
+    kind: reference
+    url: "https://www.sare.org/publications/managing-cover-crops-profitably/crop-rotation-with-cover-crops/"
+    verified_on: "2026-11-13"
+  sare_cover_crops:
+    title: "SARE, Cover Crops for Sustainable Crop Rotations"
+    kind: reference
+    url: "https://www.sare.org/resources/cover-crops/"
+    verified_on: "2026-11-13"
+  sare_building_soils:
+    title: "SARE, Building Soils for Better Crops (Magdoff and van Es)"
+    kind: reference
+    url: "https://www.sare.org/publications/building-soils-for-better-crops/"
+    verified_on: "2026-11-13"
+  nrcs_rotation:
+    title: "USDA NRCS, Crop Rotation (conservation practice)"
+    kind: reference
+    url: "https://www.nrcs.usda.gov/resources/guides-and-instructions/crop-rotation"
+    verified_on: "2026-11-13"
+  nrcs_cover_crop:
+    title: "USDA NRCS, Conservation Practice Standard Cover Crop (Code 340)"
+    kind: reference
+    url: "https://www.nrcs.usda.gov/sites/default/files/2022-09/Cover_Crop_340_CPS.pdf"
+    verified_on: "2026-11-13"
+  synthetic: { title: "Synthetic Nile Delta climatology (placeholder until NASA packs are loaded)", kind: placeholder, url: null }
+  user:      { title: "Values entered by the user", kind: user, url: null }

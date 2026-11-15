@@ -1,0 +1,71 @@
+name: deploy
+
+on:
+  push:
+    branches:
+      - master
+
+concurrency:
+  group: production-deploy
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    name: Verify Tests and Contracts
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python dependencies
+        run: pip install -r api/requirements.txt -r api/requirements-dev.txt
+
+      - name: Run API tests & lint
+        run: |
+          ruff check api
+          pytest api/tests -q
+
+      - name: Verify i18n parity
+        run: python scripts/check_i18n.py
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Build Web
+        run: |
+          cd web
+          npm install --no-audit --no-fund
+          npm run typecheck
+          npm run build
+
+  deploy:
+    name: Deploy to OCI Ampere A1
+    needs: verify
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy on OCI Host
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.OCI_HOST }}
+          username: ${{ secrets.OCI_USER }}
+          key: ${{ secrets.OCI_SSH_KEY }}
+          port: 22
+          script_stop: true
+          script: |
+            set -e
+            echo "==> Deploying Journey Into the Soil to OCI..."
+            cd /srv/journey-into-soil
+            git fetch origin master
+            git checkout master
+            git pull origin master
+            sudo docker compose up -d --build
+            echo "==> Verifying deployment health..."
+            sleep 4
+            curl -f -s http://127.0.0.1:8080/api/v1/health > /dev/null
+            echo "==> Deployment healthy!"

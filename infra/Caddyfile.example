@@ -1,0 +1,4 @@
+# Add as a NEW site block to the host's existing Caddy/proxy config; do not replace the Falqyn config.
+soil.example.com {
+    reverse_proxy 127.0.0.1:8080
+}
